@@ -1,1 +1,15 @@
+# EJERCICIO 1: Aplicar Estructura de un Documento HTML
 
+---
+
+## 1. ¿Qué es la Estructura de un Documento HTML?
+
+La estructura de un documento HTML es como el esqueleto de un ser vivo. Proporciona el orden y la jerarquía necesarios para que un navegador entienda, interprete y muestre correctamente el contenido de una página web. Cada elemento y etiqueta tiene un propósito específico y un lugar en esta jerarquía. Si el esqueleto está bien formado, la página se verá y funcionará como se espera.
+
+---
+![Infografia estructura básica de html ](assets/estructura_html.jpg)
+## 2. Componentes Fundamentales
+
+Todo documento HTML5 comienza con una declaración de tipo de documento y está envuelto en etiquetas principales que lo dividen en dos secciones esenciales: la cabeza (`<head>`) y el cuerpo (`<body>`).
+
+### Ejemplo básico de estructura HTML
