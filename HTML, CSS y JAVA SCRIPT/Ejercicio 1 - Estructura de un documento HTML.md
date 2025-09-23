@@ -10,8 +10,7 @@ mi-cv/
 Abre index.html y comienza con la estructura fundamental de cualquier documento HTML. Esto incluye el tipo de documento, el idioma, y las secciones head y body.
 
 ### HTML
-![Codigo html Ejercicio 1 ](assets/CodigoEjer1_1.png)
-![Codigo html Ejercicio 1 ](assets/CodigoEjer1_2.png)
+
 ```html
 <!DOCTYPE html>
 <html lang="es">
@@ -35,56 +34,9 @@ Abre index.html y comienza con la estructura fundamental de cualquier documento 
 Ahora, dentro de la etiqueta `<body>`, vamos a usar etiquetas de HTML para organizar el contenido en secciones lógicas.
 
 ### HTML
-
 ```html
-<body>
-
-    <header>
-        <h1>Tu Nombre Completo</h1>
-        <p>Desarrollador Web</p>
-        <p><strong>Email:</strong> tu.email@ejemplo.com | <strong>Teléfono:</strong> +123 456 7890 | <strong>LinkedIn:</strong> linkedin.com/in/tuperfil</p>
-    </header>
-
-    <hr>
-
-    <main>
-        <section>
-            <h2>Resumen Profesional</h2>
-            <p>Soy un profesional apasionado por el desarrollo web con experiencia en la creación de sitios dinámicos y funcionales. Me especializo en la resolución de problemas y estoy siempre en busca de nuevas tecnologías para mejorar mis habilidades.</p>
-        </section>
-
-        <section>
-            <h2>Experiencia Laboral</h2>
-            <h3>Nombre de la Empresa | Ciudad | Años</h3>
-            <ul>
-                <li><strong>Cargo:</strong> Título del Puesto</li>
-                <li><strong>Responsabilidades:</strong> Desarrollo y mantenimiento de aplicaciones web.</li>
-                <li><strong>Logros:</strong> Participación en proyectos clave que mejoraron la eficiencia del equipo.</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Habilidades</h2>
-            <ul>
-                <li><strong>Lenguajes:</strong> HTML, CSS, JavaScript, Python</li>
-                <li><strong>Bases de Datos:</strong> MySQL, PostgreSQL</li>
-                <li><strong>Frameworks:</strong> React, Node.js, Django</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Educación</h2>
-            <p><strong>Nombre de la Universidad/Instituto</strong> | Título Obtenido | Año de Graduación</p>
-        </section>
-
-    </main>
-
-    <footer>
-        <p>Este es un currículum creado solo con HTML.</p>
-    </footer>
-
-</body>
-```
+![Codigo html Ejercicio 1 ](assets/CodigoEjer1_1.png)
+![Codigo html Ejercicio 1 ](assets/CodigoEjer1_2.png)
 
 ### Explicación de las etiquetas utilizadas:
 - `<header>`: Contenedor para el encabezado de la página, ideal para el nombre y la información de contacto.
