@@ -4,7 +4,7 @@
 Crea una carpeta llamada "mi-cv". Dentro de ella, solo necesitarás un archivo: index.html.
 
 mi-cv/
-└── index.html
+   └── index.html
 
 ## Paso 2: Estructura Básica del HTML
 Abre index.html y comienza con la estructura fundamental de cualquier documento HTML. Esto incluye el tipo de documento, el idioma, y las secciones head y body.
@@ -34,7 +34,7 @@ Abre index.html y comienza con la estructura fundamental de cualquier documento 
 Ahora, dentro de la etiqueta `<body>`, vamos a usar etiquetas de HTML para organizar el contenido en secciones lógicas.
 
 ### HTML
-```html
+```html ``
 ![Codigo html Ejercicio 1 ](assets/CodigoEjer1_1.png)
 ![Codigo html Ejercicio 1 ](assets/CodigoEjer1_2.png)
 
