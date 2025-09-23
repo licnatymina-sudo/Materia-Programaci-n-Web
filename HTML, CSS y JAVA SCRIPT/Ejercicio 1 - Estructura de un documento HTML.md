@@ -52,3 +52,5 @@ Ahora, dentro de la etiqueta `<body>`, vamos a usar etiquetas de HTML para organ
 ## Paso 4: Visualiza tu Currículum
 Guarda el archivo index.html y ábrelo en tu navegador.
 Verás tu currículum perfectamente estructurado y organizado, aunque sin estilos (sin colores, sin fuentes personalizadas, etc.). Esto demuestra que HTML es la base, la estructura de la página, mientras que CSS es lo que le da la apariencia.
+
+![Codigo html Ejercicio 1 ](assets/Ejercicio1_web.png)
