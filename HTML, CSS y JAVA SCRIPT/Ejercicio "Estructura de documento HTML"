@@ -2,14 +2,33 @@
 
 ---
 
-## 1. ¿Qué es la Estructura de un Documento HTML?
+## PASO 1: Configuración del Proyecto 
+mi-cv/
+└── index.html
+## Paso 2: Estructura Básica del HTML
+Abre index.html y comienza con la estructura fundamental de cualquier documento HTML. Esto incluye el tipo de documento, el idioma, y las secciones head y body.
 
-La estructura de un documento HTML es como el esqueleto de un ser vivo. Proporciona el orden y la jerarquía necesarios para que un navegador entienda, interprete y muestre correctamente el contenido de una página web. Cada elemento y etiqueta tiene un propósito específico y un lugar en esta jerarquía. Si el esqueleto está bien formado, la página se verá y funcionará como se espera.
+###HTML
+```
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Currículum Vitae</title>
+</head>
+<body>
+    
+</body>
+</html>
+```
+``<!DOCTYPE html>``: Declara que es un documento HTML5.
 
----
-![Infografia estructura básica de html ](assets/estructura_html.jpg)
-## 2. Componentes Fundamentales
+``<html lang="es">``: La etiqueta principal que define el idioma de la página.
 
-Todo documento HTML5 comienza con una declaración de tipo de documento y está envuelto en etiquetas principales que lo dividen en dos secciones esenciales: la cabeza (`<head>`) y el cuerpo (`<body>`).
+``<head>``: Contiene metadatos, como el título de la página que aparece en la pestaña del navegador.
 
-### Ejemplo básico de estructura HTML
+``<body>``: Contiene todo el contenido visible de tu CV.
+
+## Paso 3: Añadiendo el Contenido del CV
+Ahora, dentro de la etiqueta <body>, vamos a usar etiquetas de HTML para organizar el contenido en secciones lógicas.
