@@ -90,17 +90,23 @@ Ahora, vamos a modificar nuestro archivo index.html para vincular la hoja de est
 1. Vincula el archivo CSS:
 
 Añade la siguiente línea dentro de la etiqueta <head> de tu index.html.
-
-HTML
-
+  
 ``<link rel="stylesheet" href="css/styles.css">``
+
 2. Agrega las imágenes a los artículos:
 
 Modifica la sección <article> en tu index.html para incluir una imagen de portada.
-``<img src="img/article1-thumb.jpg" alt="Persona programando en una laptop" class="article-img">``
+Incluye el siguiente código para el primer artículo  
+    ``<img src="img/article1-thumb.jpg" alt="Persona programando en una laptop" class="article-img">``
 
-`` <img src="img/article2-thumb.jpg" alt="Gráficos de datos en una pantalla" class="article-img">``
+Incluye el siguiente enlace para el segundo artículo  
+    ``<img src="img/article2-thumb.jpg" alt="Gráficos de datos en una pantalla" class="article-img">``
+
 ![Codigo html Ejercicio 1 ](assets/agregar_imagen_al_blog.png)
+
+### Paso 4: Escribir el Código CSS
+Abre el archivo css/styles.css y pega el siguiente código. He añadido comentarios para que comprendas la función de cada sección
+
 
 
 
