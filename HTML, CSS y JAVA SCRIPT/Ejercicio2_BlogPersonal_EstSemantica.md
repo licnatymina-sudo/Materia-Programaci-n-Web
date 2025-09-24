@@ -77,9 +77,29 @@ blog-personal/
        │   └── (Aquí pondremos las imágenes)
    └─ index.html
 
-### Paso 2: Estructura Base del Documento HTML
-Abre el archivo index.html en tu editor de código y añade la estructura fundamental. Esta es la base de todo documento HTML5 bien formado.
+### Paso 2: Obtener Imágenes para el Blog
+Para darle un toque profesional a tu blog, puedes usar imágenes de alta calidad y gratuitas. Aquí te proporciono algunas opciones de imágenes de ejemplo que podrías descargar y guardar en la carpeta img/.
 
+Imagen para el banner principal del blog: Un fondo relacionado con la tecnología o el código.
+
+Imágenes para los artículos: Una imagen de portada para cada entrada del blog.
+
+### Paso 3: Vincular el CSS y Usar las Imágenes
+Ahora, vamos a modificar nuestro archivo index.html para vincular la hoja de estilos y agregar las imágenes que acabas de descargar.
+
+1. Vincula el archivo CSS:
+
+Añade la siguiente línea dentro de la etiqueta <head> de tu index.html.
+
+HTML
+
+``<link rel="stylesheet" href="css/styles.css">``
+2. Agrega las imágenes a los artículos:
+
+Modifica la sección <article> en tu index.html para incluir una imagen de portada.
+``<img src="img/article1-thumb.jpg" alt="Persona programando en una laptop" class="article-img">``
+
+`` <img src="img/article2-thumb.jpg" alt="Gráficos de datos en una pantalla" class="article-img">``
 
 
 
