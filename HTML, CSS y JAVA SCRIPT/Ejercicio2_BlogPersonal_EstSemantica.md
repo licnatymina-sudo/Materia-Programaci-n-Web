@@ -107,9 +107,10 @@ Incluye el siguiente enlace para el segundo artículo
 ### Paso 4: Escribir el Código CSS
 Abre el archivo css/styles.css y escribe el siguiente código. He añadido comentarios para que comprendas la función de cada sección
 
-![Codigo html Ejercicio 1 ](assets/agregar_imagen_al_blog.png)
-![Codigo html Ejercicio 1 ](assets/agregar_imagen_al_blog.png)
-![Codigo html Ejercicio 1 ](assets/agregar_imagen_al_blog.png)
+![Codigo html Ejercicio 1 ](assets/CssBlog_pte1.png)
+![Codigo html Ejercicio 1 ](assets/CssBlog_pte2.png)
+![Codigo html Ejercicio 1 ](assets/CssBlog_pte3.png)
+![Codigo html Ejercicio 1 ](assets/CssBlog_pte4.png)
 
 
 
