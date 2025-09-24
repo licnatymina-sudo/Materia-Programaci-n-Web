@@ -100,7 +100,7 @@ Modifica la sección <article> en tu index.html para incluir una imagen de porta
 ``<img src="img/article1-thumb.jpg" alt="Persona programando en una laptop" class="article-img">``
 
 `` <img src="img/article2-thumb.jpg" alt="Gráficos de datos en una pantalla" class="article-img">``
-![Codigo html Ejercicio 1 ](assets/BlogSinCss.png)
+![Codigo html Ejercicio 1 ](assets/agregar_imagen_al_blog.png)
 
 
 
