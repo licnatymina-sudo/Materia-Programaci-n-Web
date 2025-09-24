@@ -70,14 +70,18 @@ Guarda el archivo y ábrelo con tu navegador. Verás tu blog estructurado y list
 Primero, asegúrate de que tu proyecto tenga la siguiente estructura de carpetas. Necesitaremos una carpeta para los estilos (css) y otra para las imágenes (img).
 
 blog-personal/
-├── css/
-│   └── styles.css
-├── img/
-│   └── (Aquí pondremos las imágenes)
-└── index.html
 
-### Paso 2: Obtener Imágenes para el Blog
-Para darle un toque profesional a tu blog, puedes usar imágenes de alta calidad y gratuitas. Aquí te proporciono algunas opciones de imágenes de ejemplo que podrías descargar y guardar en la carpeta img/.
+       ├── css/
+       │   └── styles.css
+       ├── img/
+       │   └── (Aquí pondremos las imágenes)
+   └─ index.html
+
+### Paso 2: Estructura Base del Documento HTML
+Abre el archivo index.html en tu editor de código y añade la estructura fundamental. Esta es la base de todo documento HTML5 bien formado.
+
+
+
 
 
 
