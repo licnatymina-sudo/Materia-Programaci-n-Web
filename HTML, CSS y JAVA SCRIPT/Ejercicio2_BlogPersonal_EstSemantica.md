@@ -40,6 +40,26 @@ Ahora, dentro del <body>, usaremos etiquetas semánticas para organizar el conte
 
 ### HTML
 
+![Codigo html Ejercicio 1 ](assets/CodEjer2_pte1.png)
+![Codigo html Ejercicio 1 ](assets/CodEjer2_pte2.png)
+![Codigo html Ejercicio 1 ](assets/CodEjer2_pte3.png)
+Explicación de las etiquetas semánticas:
+
+``<header>``: Contiene la introducción de la página, como el título principal y la navegación.
+
+``<nav>``: Agrupa los enlaces de navegación.
+
+``<main>``: Representa el contenido principal y único de la página. Todo lo que está dentro de <main> no se repite en otras páginas.
+
+``<section>``: Define una sección temática en el documento, como "Últimas Entradas" o "Contacto".
+
+``<article>``: Contiene una pieza de contenido independiente y auto-suficiente, como una entrada de blog completa.
+
+``<footer>``: Contiene información de pie de página, como derechos de autor, enlaces de contacto o información del autor.
+
+## Paso 4: ¡Visualiza tu Blog!
+Guarda el archivo y ábrelo con tu navegador. Verás tu blog estructurado y listo. Aunque no tendrá estilos visuales, la estructura lógica está completa y optimizada para cualquier navegador o motor de búsqueda.
+
 
 
 
