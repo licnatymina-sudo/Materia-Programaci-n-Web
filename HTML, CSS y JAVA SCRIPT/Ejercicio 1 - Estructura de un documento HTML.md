@@ -65,8 +65,11 @@ Asegúrate de tener la siguiente estructura de carpetas. Necesitaremos un archiv
 mi-cv/
 
    ├── css/
+   
    │   └── styles.css
+   
    └── index.html
+   
 Si aún no tienes la carpeta css y el archivo styles.css dentro de ella, créalos ahora.
 
 ### Paso 2: Revisar el HTML del CV
@@ -89,18 +92,16 @@ Abre el archivo css/styles.css (créalo si no existe) y vamos a añadir los esti
 
   **3.1. Estilos Globales y de body**
    Estos estilos afectarán a todo el documento, definiendo la fuente, el color de fondo y el margen general.
-
-   ![Codigo html Ejercicio 1 ](assets/css_Curriculo1.png)
-
+   ![Codigo html Ejercicio 1 ](assets/css_curriculo1.png)
    **Explicación:**
 
-``font-family``: Establece una pila de fuentes. El navegador intentará usar Segoe UI primero, luego Tahoma, etc. Si ninguna de esas está disponible, usará una fuente genérica sans-serif.
+- ``font-family``: Establece una pila de fuentes. El navegador intentará usar Segoe UI primero, luego Tahoma, etc. Si ninguna de esas está disponible, usará una fuente genérica sans-serif.
 
-``line-height``: Aumenta el espacio entre las líneas de texto, haciendo que los párrafos sean más fáciles de leer.
+- ``line-height``: Aumenta el espacio entre las líneas de texto, haciendo que los párrafos sean más fáciles de leer.
 
-``margin: 0; padding: 20px;``: Resetea el margen predeterminado del body y agrega un relleno general para que el contenido no esté pegado a los bordes de la ventana.
+- ``margin: 0; padding: 20px;``: Resetea el margen predeterminado del body y agrega un relleno general para que el contenido no esté pegado a los bordes de la ventana.
 
-``background-color y color``: Definen el color de fondo de toda la página y el color de texto por defecto.
+- ``background-color y color``: Definen el color de fondo de toda la página y el color de texto por defecto.
 
 **3.2. Estilos para el Contenedor Principal (``main``) y ``hr``**
 Vamos a centrar el CV en la pantalla y darle un aspecto de "documento" con un fondo blanco y una sombra.   
@@ -108,17 +109,17 @@ Vamos a centrar el CV en la pantalla y darle un aspecto de "documento" con un fo
 
 **Explicación:**
 
-``main``:
+- ``main``:
 
-``max-width``: Impide que el CV se estire demasiado en pantallas grandes, manteniendo la legibilidad.
+- ``max-width``: Impide que el CV se estire demasiado en pantallas grandes, manteniendo la legibilidad.
 
-``margin: 20px auto;``: auto en los márgenes izquierdo y derecho, combinado con un max-width, es la forma estándar de centrar un bloque de contenido.
+- ``margin: 20px auto;``: auto en los márgenes izquierdo y derecho, combinado con un max-width, es la forma estándar de centrar un bloque de contenido.
 
-``padding``: Espacio interno entre el borde del main y su contenido.
+- ``padding``: Espacio interno entre el borde del main y su contenido.
 
-``background-color, border-radius, box-shadow``: Estos juntos crean el efecto de una hoja de papel elevada sobre el fondo de la página.
+- ``background-color, border-radius, box-shadow``: Estos juntos crean el efecto de una hoja de papel elevada sobre el fondo de la página.
 
-``hr``: Le damos un estilo más discreto y moderno a la línea divisoria.
+- ``hr``: Le damos un estilo más discreto y moderno a la línea divisoria.
 
 **3.3. Estilos para el Encabezado (``header``)**
 El encabezado es la primera impresión. Le daremos un estilo claro y centrado.
@@ -127,13 +128,13 @@ El encabezado es la primera impresión. Le daremos un estilo claro y centrado.
 
 **Explicación:**
 
--``text-align``: center;: Centra los elementos de texto dentro del header.
+- ``text-align``: center;: Centra los elementos de texto dentro del header.
 
--``h1``: Se estiliza para que el nombre del candidato sea prominente y profesional.
+- ``h1``: Se estiliza para que el nombre del candidato sea prominente y profesional.
 
--``p``: Los párrafos de contacto tienen un tamaño y color más moderados.
+- ``p``: Los párrafos de contacto tienen un tamaño y color más moderados.
 
--``border-bottom``: Una línea azul debajo del encabezado ayuda a separarlo visualmente del resto del CV.
+- ``border-bottom``: Una línea azul debajo del encabezado ayuda a separarlo visualmente del resto del CV.
 
 **3.4. Estilos para Secciones (``section``) y Títulos (``h2, h3``)**
 Cada sección del CV necesita un título claro y un espaciado adecuado.
@@ -142,11 +143,11 @@ Cada sección del CV necesita un título claro y un espaciado adecuado.
 
    **Explicación:**
 
--``section``: Define el margen inferior para separar las secciones.
+- ``section``: Define el margen inferior para separar las secciones.
 
--``h2``: Se estiliza con un color distintivo y una línea inferior para que resalte como el título de una sección importante.
+- ``h2``: Se estiliza con un color distintivo y una línea inferior para que resalte como el título de una sección importante.
 
--``h3``: Estilos para subtítulos dentro de las secciones, como el nombre de la empresa o la universidad.
+- ``h3``: Estilos para subtítulos dentro de las secciones, como el nombre de la empresa o la universidad.
 
    ![Codigo html Ejercicio 1 ](assets/css_curriculo5.png)
 
