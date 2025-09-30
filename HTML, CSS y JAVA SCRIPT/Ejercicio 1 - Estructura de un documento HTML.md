@@ -90,3 +90,7 @@ Abre el archivo css/styles.css (créalo si no existe) y vamos a añadir los esti
    3.1. Estilos Globales y de body
    Estos estilos afectarán a todo el documento, definiendo la fuente, el color de fondo y el margen general.
 
+   ![Codigo html Ejercicio 1 ](assets/Ejercicio1_web.png)
+
+   
+
