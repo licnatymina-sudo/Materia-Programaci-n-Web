@@ -174,10 +174,12 @@ El pie de página será simple, con información de derechos de autor.
 
 -`border-top`: Una línea sutil para marcar el inicio del footer.
 
-### Paso 4: Código CSS Completo (css/styles.css)
-Aquí tienes todo el código CSS junto. Pégalo en tu archivo css/styles.css.
+Por último agrega estilo responsivo a tu `HTML`
 
    ![Codigo html Ejercicio 1 ](assets/css_Curriculo7.png)
 
+   **Visualiza tu Curriculum creado con HTML y CSS**
+   
+   ![Codigo html Ejercicio 1 ](assets/EjecucionCurriculo.png)
    
 
