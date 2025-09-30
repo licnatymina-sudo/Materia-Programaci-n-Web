@@ -1,12 +1,12 @@
 # Ejercicio 1 - Estructura de un documento HTML
-
-## Paso 1: Configuración del Proyecto
+## Creación del Curriculum vitae con HTML
+### Paso 1: Configuración del Proyecto
 Crea una carpeta llamada "mi-cv". Dentro de ella, solo necesitarás un archivo: index.html.
 
 mi-cv/
    └── index.html
 
-## Paso 2: Estructura Básica del HTML
+### Paso 2: Estructura Básica del HTML
 Abre index.html y comienza con la estructura fundamental de cualquier documento HTML. Esto incluye el tipo de documento, el idioma, y las secciones head y body.
 
 ### HTML
@@ -30,7 +30,7 @@ Abre index.html y comienza con la estructura fundamental de cualquier documento 
 - `<head>`: Contiene metadatos, como el título de la página que aparece en la pestaña del navegador.
 - `<body>`: Contiene todo el contenido visible de tu CV.
 
-## Paso 3: Añadiendo el Contenido del CV
+### Paso 3: Añadiendo el Contenido del CV
 Ahora, dentro de la etiqueta `<body>`, vamos a usar etiquetas de HTML para organizar el contenido en secciones lógicas.
 
 ### HTML
@@ -49,8 +49,44 @@ Ahora, dentro de la etiqueta `<body>`, vamos a usar etiquetas de HTML para organ
 - `<ul>` y `<li>`: Crean una lista no ordenada (viñetas). `<ul>` es el contenedor de la lista y `<li>` es cada elemento de la lista.
 - `<footer>`: Contenedor para el pie de página.
 
-## Paso 4: Visualiza tu Currículum
+### Paso 4: Visualiza tu Currículum
 Guarda el archivo index.html y ábrelo en tu navegador.
 Verás tu currículum perfectamente estructurado y organizado, aunque sin estilos (sin colores, sin fuentes personalizadas, etc.). Esto demuestra que HTML es la base, la estructura de la página, mientras que CSS es lo que le da la apariencia.
 
 ![Codigo html Ejercicio 1 ](assets/Ejercicio1_web.png)
+
+
+## Proyecto: Currículum Vitae con Estilo Profesional
+Es momento de aplicar CSS para transformar el CV HTML básico en un documento visualmente agradable, fácil de leer y profesional, sigue los siguientes pasos para lograrlo.
+
+### Paso 1: Preparación del Proyecto
+Asegúrate de tener la siguiente estructura de carpetas. Necesitaremos un archivo HTML (ya lo tenemos) y un archivo CSS.
+
+mi-cv/
+
+   ├── css/
+   │   └── styles.css
+   └── index.html
+Si aún no tienes la carpeta css y el archivo styles.css dentro de ella, créalos ahora.
+
+Paso 2: Revisar el HTML del CV
+Verifica de que no haya cambios para que el CSS pueda aplicarse correctamente:
+```HTML
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Currículum Vitae</title>
+    <link rel="stylesheet" href="css/styles.css"> 
+</head>
+```
+
+Asegúrate de haber añadido la línea ``<link rel="stylesheet" href="css/styles.css">`` dentro de la etiqueta ``<head>``. Sin esta línea, tu navegador no sabrá dónde encontrar tus estilos.
+
+Paso 3: Creación del Archivo styles.css y Estilos Iniciales
+Abre el archivo css/styles.css (créalo si no existe) y vamos a añadir los estilos paso a paso.
+
+   3.1. Estilos Globales y de body
+   Estos estilos afectarán a todo el documento, definiendo la fuente, el color de fondo y el margen general.
+
