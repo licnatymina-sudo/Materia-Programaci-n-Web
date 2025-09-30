@@ -69,7 +69,7 @@ mi-cv/
    └── index.html
 Si aún no tienes la carpeta css y el archivo styles.css dentro de ella, créalos ahora.
 
-Paso 2: Revisar el HTML del CV
+### Paso 2: Revisar el HTML del CV
 Verifica de que no haya cambios para que el CSS pueda aplicarse correctamente:
 ```HTML
 <!DOCTYPE html>
@@ -84,15 +84,15 @@ Verifica de que no haya cambios para que el CSS pueda aplicarse correctamente:
 
 Asegúrate de haber añadido la línea ``<link rel="stylesheet" href="css/styles.css">`` dentro de la etiqueta ``<head>``. Sin esta línea, tu navegador no sabrá dónde encontrar tus estilos.
 
-Paso 3: Creación del Archivo styles.css y Estilos Iniciales
+### Paso 3: Creación del Archivo styles.css y Estilos Iniciales
 Abre el archivo css/styles.css (créalo si no existe) y vamos a añadir los estilos paso a paso.
 
-   3.1. Estilos Globales y de body
+  **3.1. Estilos Globales y de body**
    Estos estilos afectarán a todo el documento, definiendo la fuente, el color de fondo y el margen general.
 
    ![Codigo html Ejercicio 1 ](assets/css_Curriculo1.png)
 
-   Explicación:
+   **Explicación:**
 
 ``font-family``: Establece una pila de fuentes. El navegador intentará usar Segoe UI primero, luego Tahoma, etc. Si ninguna de esas está disponible, usará una fuente genérica sans-serif.
 
@@ -102,11 +102,11 @@ Abre el archivo css/styles.css (créalo si no existe) y vamos a añadir los esti
 
 ``background-color y color``: Definen el color de fondo de toda la página y el color de texto por defecto.
 
-3.2. Estilos para el Contenedor Principal (``main``) y ``hr``
+**3.2. Estilos para el Contenedor Principal (``main``) y ``hr``**
 Vamos a centrar el CV en la pantalla y darle un aspecto de "documento" con un fondo blanco y una sombra.   
    ![Codigo html Ejercicio 1 ](assets/css_curriculo2.png)
 
-Explicación:
+**Explicación:**
 
 ``main``:
 
@@ -120,27 +120,33 @@ Explicación:
 
 ``hr``: Le damos un estilo más discreto y moderno a la línea divisoria.
 
-3.3. Estilos para el Encabezado (``header``)
+**3.3. Estilos para el Encabezado (``header``)**
 El encabezado es la primera impresión. Le daremos un estilo claro y centrado.
 
    ![Codigo html Ejercicio 1 ](assets/css_Curriculo3.png)
 
-Explicación:
+**Explicación:**
 
-``text-align``: center;: Centra los elementos de texto dentro del header.
+-``text-align``: center;: Centra los elementos de texto dentro del header.
 
-``h1``: Se estiliza para que el nombre del candidato sea prominente y profesional.
+-``h1``: Se estiliza para que el nombre del candidato sea prominente y profesional.
 
-``p``: Los párrafos de contacto tienen un tamaño y color más moderados.
+-``p``: Los párrafos de contacto tienen un tamaño y color más moderados.
 
-``border-bottom``: Una línea azul debajo del encabezado ayuda a separarlo visualmente del resto del CV.
+-``border-bottom``: Una línea azul debajo del encabezado ayuda a separarlo visualmente del resto del CV.
 
-3.4. Estilos para Secciones (``section``) y Títulos (``h2, h3``)
+**3.4. Estilos para Secciones (``section``) y Títulos (``h2, h3``)**
 Cada sección del CV necesita un título claro y un espaciado adecuado.
 
    ![Codigo html Ejercicio 1 ](assets/css_Curriculo4.png)
 
-   
+   **Explicación:**
+
+-``section``: Define el margen inferior para separar las secciones.
+
+-``h2``: Se estiliza con un color distintivo y una línea inferior para que resalte como el título de una sección importante.
+
+-``h3``: Estilos para subtítulos dentro de las secciones, como el nombre de la empresa o la universidad.
 
    ![Codigo html Ejercicio 1 ](assets/css_curriculo5.png)
 
