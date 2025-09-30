@@ -34,7 +34,7 @@ Abre index.html y comienza con la estructura fundamental de cualquier documento 
 Ahora, dentro de la etiqueta `<body>`, vamos a usar etiquetas de HTML para organizar el contenido en secciones lógicas.
 
 ### HTML
-```html ``
+``html ``
 ![Codigo html Ejercicio 1 ](assets/CodigoEjer1_1.png)
 ![Codigo html Ejercicio 1 ](assets/CodigoEjer1_2.png)
 
@@ -92,7 +92,8 @@ Abre el archivo css/styles.css (créalo si no existe) y vamos a añadir los esti
 
   **3.1. Estilos Globales y de body**
    Estos estilos afectarán a todo el documento, definiendo la fuente, el color de fondo y el margen general.
-   ![Codigo html Ejercicio 1 ](assets/css_curriculo1.png)
+   ![Codigo html Ejercicio 1 ](assets/ccs_Curriculo1.png)
+  
    **Explicación:**
 
 - ``font-family``: Establece una pila de fuentes. El navegador intentará usar Segoe UI primero, luego Tahoma, etc. Si ninguna de esas está disponible, usará una fuente genérica sans-serif.
@@ -149,9 +150,32 @@ Cada sección del CV necesita un título claro y un espaciado adecuado.
 
 - ``h3``: Estilos para subtítulos dentro de las secciones, como el nombre de la empresa o la universidad.
 
+**3.5. Estilos para Listas (`ul, li`)**
+Las listas son muy comunes en los CV (experiencia, habilidades), por lo que necesitamos que se vean limpias y legibles.
+
    ![Codigo html Ejercicio 1 ](assets/css_curriculo5.png)
 
+**Explicación:**
+
+-`ul`: Se establece el tipo de viñeta y una sangría para alinear bien la lista.
+
+-`li`: Se añade un margen inferior para separar cada elemento de la lista.
+
+**3.6. Estilos para el Pie de Página (footer)**
+El pie de página será simple, con información de derechos de autor.
+
    ![Codigo html Ejercicio 1 ](assets/css_Curriculo6.png)
+
+   **Explicación:**
+
+-`text-align`: center;: Centra el texto.
+
+-`margin-top`: Separa el footer del contenido principal.
+
+-`border-top`: Una línea sutil para marcar el inicio del footer.
+
+### Paso 4: Código CSS Completo (css/styles.css)
+Aquí tienes todo el código CSS junto. Pégalo en tu archivo css/styles.css.
 
    ![Codigo html Ejercicio 1 ](assets/css_Curriculo7.png)
 
