@@ -115,7 +115,7 @@ Abre el archivo css/styles.css y escribe el siguiente código. He añadido comen
 ### Paso 5: ¡Visualiza tu Blog con Estilo!
 Guarda todos los archivos, abre index.html en tu navegador y verás cómo la página de tu blog ahora luce profesional, organizada y con un diseño limpio.
 
-
+![Codigo html Ejercicio 1 ](assets/BlogconCss.png)
 
 
 
