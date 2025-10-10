@@ -48,3 +48,35 @@ Así es como se mostrará el código HTML anterior en un navegador:
 
 ![Imagenes_Forms ](assets/formulario/c_textos.png)
 
+### El elemento `<label>`
+Observe el uso del <label>elemento en el ejemplo anterior.
+
+La etiqueta `<label>`  define una etiqueta para muchos elementos de formulario.
+
+El elemento `<label>`  es útil para los usuarios de lectores de pantalla, porque el lector de pantalla leerá en voz alta la etiqueta cuando el usuario se centre en el elemento de entrada.
+
+El elemento `<label>` también ayuda a los usuarios que tienen dificultades para hacer clic en regiones muy pequeñas (como botones de opción o casillas de verificación), porque cuando el usuario hace clic en el texto dentro del `<label>` elemento, alterna el botón de opción o la casilla de verificación.
+
+El atributo for de la etiqueta `<label>` debe ser igual al idatributo del `<input>` elemento para unirlos.
+
+### Botones de radio
+El `<input type="radio">` define un botón de opción.
+
+Los botones de opción permiten al usuario seleccionar UNA de un número limitado de opciones.
+
+**Ejemplo**
+Un formulario con botones de opción:
+```HTML
+<p>Choose your favorite Web language:</p>
+
+<form>
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">HTML</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">CSS</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">JavaScript</label>
+</form>
+```
+
+Así es como se mostrará el código HTML anterior en un navegador:
