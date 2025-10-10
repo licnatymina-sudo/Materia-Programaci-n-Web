@@ -40,9 +40,9 @@ Ahora, dentro del <body>, usaremos etiquetas semánticas para organizar el conte
 
 *** HTML
 
-![Codigo html Ejercicio 1 ](assets/CodEjer2_pte1.png)
-![Codigo html Ejercicio 1 ](assets/CodEjer2_pte2.png)
-![Codigo html Ejercicio 1 ](assets/CodEjer2_pte3.png)
+![Codigo html Ejercicio 1 ](assets/ejer2/CodEjer2_pte1.png)
+![Codigo html Ejercicio 1 ](assets/ejer2/CodEjer2_pte2.png)
+![Codigo html Ejercicio 1 ](assets/ejer2/CodEjer2_pte3.png)
 Explicación de las etiquetas semánticas:
 
 ``<header>``: Contiene la introducción de la página, como el título principal y la navegación.
@@ -107,10 +107,10 @@ Incluye el siguiente enlace para el segundo artículo
 ### Paso 4: Escribir el Código CSS
 Abre el archivo css/styles.css y escribe el siguiente código. He añadido comentarios para que comprendas la función de cada sección
 
-![Codigo html Ejercicio 1 ](assets/CssBlog_pte1.png)
-![Codigo html Ejercicio 1 ](assets/CssBlog_pte2.png)
-![Codigo html Ejercicio 1 ](assets/CssBlog_pte3.png)
-![Codigo html Ejercicio 1 ](assets/CssBlog_pte4.png)
+![Codigo html Ejercicio 1 ](assets/ejer2/CssBlog_pte1.png)
+![Codigo html Ejercicio 1 ](assets/ejer2/CssBlog_pte2.png)
+![Codigo html Ejercicio 1 ](assets/ejer2/CssBlog_pte3.png)
+![Codigo html Ejercicio 1 ](assets/ejer2/CssBlog_pte4.png)
 
 ### Paso 5: ¡Visualiza tu Blog con Estilo!
 Guarda todos los archivos, abre index.html en tu navegador y verás cómo la página de tu blog ahora luce profesional, organizada y con un diseño limpio.
