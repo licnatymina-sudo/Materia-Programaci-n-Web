@@ -35,9 +35,10 @@ En el siguiente ejemplo, los datos del formulario se envían a un archivo llamad
 |framename         	|The response is displayed in a named iframe               |
 
 
-El valor predeterminado es , _selflo que significa que la respuesta se abrirá en la ventana actual.
+El valor predeterminado es , _selfl que significa que la respuesta se abrirá en la ventana actual.
 
 **Ejemplo**
+
 Aquí, el resultado enviado se abrirá en una nueva pestaña del navegador:
 
 `<form action="/action_page.php" target="_blank">`
@@ -71,3 +72,37 @@ Este ejemplo utiliza el método POST al enviar los datos del formulario:
 - POST no tiene limitaciones de tamaño y se puede utilizar para enviar grandes cantidades de datos.
 Los envíos de formularios con POST no se pueden marcar como favoritos
 Consejo: ¡ Utilice siempre POST si los datos del formulario contienen información confidencial o personal!
+
+
+## El atributo de autocompletar
+- El autocompleteatributo especifica si un formulario debe tener la función de autocompletar activada o desactivada.
+
+- Cuando la función de autocompletar está activada, el navegador completa automáticamente los valores en función de los valores que el usuario haya ingresado anteriormente.
+
+**Ejemplo**
+Un formulario con autocompletado activado:
+
+- `<form action="/action_page.php" autocomplete="on">`
+- El atributo Novalidate
+- El novalidateatributo es un atributo booleano.
+
+- Cuando está presente, especifica que los datos del formulario (entrada) no deben validarse cuando se envían.
+
+**Ejemplo**
+- Un formulario con un atributo novalidate:
+
+`<form action="/action_page.php" novalidate>`
+
+
+## Lista de todos los atributos de <form>
+|       Atributo     	|                                               Descripción                                                          |
+|---------------------|--------------------------------------------------------------------------------------------------------------------|
+| accept-charset      | Especifica las codificaciones de caracteres utilizadas para el envío del formulario.                               |
+| action	            | Especifica dónde enviar los datos del formulario cuando se envía un formulario                                     |
+| autocomplete	      | Especifica si un formulario debe tener la función de autocompletar activada o desactivada                          |
+| enctype	            | Especifica cómo se deben codificar los datos del formulario al enviarlos al servidor (solo para el método="post")  |
+| méthod	            | Especifica el método HTTP que se utilizará al enviar datos de formulario                                           |
+| name	              | Especifica el nombre del formulario.                                                                               |
+| novalidate	        | Especifica que el formulario no debe validarse al enviarse                                                         |
+| rel	                | Especifica la relación entre un recurso vinculado y el documento actual                                            |
+| target	            | Especifica dónde mostrar la respuesta que se recibe después de enviar el formulario                                |
