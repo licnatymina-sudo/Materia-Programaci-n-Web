@@ -1,7 +1,7 @@
 # Atributos de formulario HTML
 Esta lección describe los diferentes atributos del `<form>`elemento HTML.
 
-## El atributo de acción
+## El atributo de action
 - El atributo action  define la acción que se realizará cuando se envía el formulario.
 
 - Normalmente, los datos del formulario se envían a un archivo en el servidor cuando el usuario hace clic en el botón enviar.
@@ -21,7 +21,7 @@ En el siguiente ejemplo, los datos del formulario se envían a un archivo llamad
 ```
 **Consejo:** si se omite el actionatributo, la acción se establece en la página actual.
 
-## El atributo objetivo
+## El atributo target
 - El targetatributo especifica dónde mostrar la respuesta que se recibe después de enviar el formulario.
 
 - El targetatributo puede tener uno de los siguientes valores:
@@ -43,7 +43,7 @@ Aquí, el resultado enviado se abrirá en una nueva pestaña del navegador:
 
 `<form action="/action_page.php" target="_blank">`
 
-## El atributo de método
+## El atributo de method
 - El atributo method  especifica el método HTTP que se utilizará al enviar los datos del formulario.
 - Los datos del formulario se pueden enviar como variables de URL (con method="get") o como transacciones posteriores HTTP (con method="post").
 - El método HTTP predeterminado al enviar datos del formulario es GET. 
@@ -74,7 +74,7 @@ Los envíos de formularios con POST no se pueden marcar como favoritos
 Consejo: ¡ Utilice siempre POST si los datos del formulario contienen información confidencial o personal!
 
 
-## El atributo de autocompletar
+## El atributo de autocomplete
 - El autocompleteatributo especifica si un formulario debe tener la función de autocompletar activada o desactivada.
 
 - Cuando la función de autocompletar está activada, el navegador completa automáticamente los valores en función de los valores que el usuario haya ingresado anteriormente.
