@@ -65,6 +65,7 @@ El `<input type="radio">` define un botón de opción.
 Los botones de opción permiten al usuario seleccionar UNA de un número limitado de opciones.
 
 **Ejemplo**
+
 Un formulario con botones de opción:
 ```HTML
 <p>Choose your favorite Web language:</p>
@@ -80,3 +81,64 @@ Un formulario con botones de opción:
 ```
 
 Así es como se mostrará el código HTML anterior en un navegador:
+![Imagenes_Forms ](assets/formulario/.png)
+
+
+Casillas de verificación
+El `<input type="checkbox">` define una casilla de verificación .
+
+Las casillas de verificación permiten al usuario seleccionar CERO o MÁS opciones de un número limitado de opciones.
+
+Ejemplo
+Un formulario con casillas de verificación:
+```HTML
+<form>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> I have a boat</label>
+</form>
+```
+Así es como se mostrará el código HTML anterior en un navegador:
+![Imagenes_Forms ](assets/formulario/.png)
+
+### El botón Enviar
+Define `<input type="submit">` un botón para enviar los datos del formulario a un controlador de formulario.
+
+El controlador de formulario normalmente es un archivo en el servidor con un script para procesar los datos de entrada.
+
+El controlador del formulario se especifica en el action atributo del formulario.
+
+**Ejemplo**
+Un formulario con un botón de envío:
+```HTML
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+```
+
+Así es como se mostrará el código HTML anterior en un navegador:
+
+![Imagenes_Forms ](assets/formulario/.png)
+
+### El atributo de nombre para <input>
+Tenga en cuenta que cada campo de entrada debe tener un nameatributo para ser enviado.
+
+Si se omite el nameatributo, el valor del campo de entrada no se enviará en absoluto.
+
+**Ejemplo**
+Este ejemplo no enviará el valor del campo de entrada "Nombre": 
+```HTML
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" value="John"><br><br>
+  <input type="submit" value="Submit">
+</form>
+```
+
