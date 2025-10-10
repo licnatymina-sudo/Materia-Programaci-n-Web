@@ -11,6 +11,8 @@ form elements
 .
 </form>
 ```
+![Imegenes_Form ](assets/formulario/formulario.png)
+
 El elemento `<form>` es un contenedor para diferentes tipos de elementos de entrada, como: campos de texto, casillas de verificación, botones de opción, botones de envío, etc.
 
 ### El elemento `<input>`
@@ -44,5 +46,5 @@ Un formulario con campos de entrada para texto:
 ````
 Así es como se mostrará el código HTML anterior en un navegador:
 
-![Codigo html Ejercicio 1 ](assets/ejer2/CodEjer2_pte2.png)
+![Imagenes_Forms ](assets/formulario/c_textos.png)
 
