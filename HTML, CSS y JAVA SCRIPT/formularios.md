@@ -15,22 +15,22 @@ form elements
 
 El elemento `<form>` es un contenedor para diferentes tipos de elementos de entrada, como: campos de texto, casillas de verificación, botones de opción, botones de envío, etc.
 
-### El elemento `<input>`
+## El elemento `<input>`
 
 El elemento HTML `<input>` es el elemento de formulario más utilizado.
 
 Un elemento `<input>` se puede mostrar de muchas maneras, dependiendo del type atributo.
 
 A continuación se muestran algunos ejemplos:
-|                  Tipo                     |                                      Descripción                                      |
-| ----------------------------------------- | ------------------------------------------------------------------------------------- |
-| `<tipo de entrada="texto">`               | Muestra un campo de entrada de texto de una sola línea                                |
-| `<tipo de entrada="radio">`               | Muestra un botón de opción (para seleccionar una de muchas opciones)                  |
-| `<input type="casilla de verificación">`  | Muestra una casilla de verificación (para seleccionar cero o más de muchas opciones)  |
-| `<input type="enviar">`                   | Muestra un botón de envío (para enviar el formulario)                                 |
-| `<tipo de entrada="botón">`               | Muestra un botón en el que se puede hacer clic                                        |
+|                  Tipo             |                                      Descripción                                      |
+| --------------------------------- | ------------------------------------------------------------------------------------- |
+| `<input type="text">`             | Muestra un campo de entrada de texto de una sola línea                                |
+| `<input type="radio">`            | Muestra un botón de opción (para seleccionar una de muchas opciones)                  |
+| `<input type="checkbox">`         | Muestra una casilla de verificación (para seleccionar cero o más de muchas opciones)  |
+| `<input type="submit">`           | Muestra un botón de envío (para enviar el formulario)                                 |
+| `<tipo de entrada="button">`      | Muestra un botón en el que se puede hacer clic                                        |
 
-### Campos de texto
+### Text Fields
 Define `<input type="text">` un campo de entrada de una sola línea para la entrada de texto.
 
 Ejemplo
@@ -81,10 +81,11 @@ Un formulario con botones de opción:
 ```
 
 Así es como se mostrará el código HTML anterior en un navegador:
-![Imagenes_Forms ](assets/formulario/.png)
+
+![Imagenes_Forms ](assets/formulario/btn_radio.png)
 
 
-Casillas de verificación
+### Casillas de verificación
 El `<input type="checkbox">` define una casilla de verificación .
 
 Las casillas de verificación permiten al usuario seleccionar CERO o MÁS opciones de un número limitado de opciones.
@@ -102,7 +103,8 @@ Un formulario con casillas de verificación:
 </form>
 ```
 Así es como se mostrará el código HTML anterior en un navegador:
-![Imagenes_Forms ](assets/formulario/.png)
+
+![Imagenes_Forms ](assets/formulario/btn_verif.png)
 
 ### El botón Enviar
 Define `<input type="submit">` un botón para enviar los datos del formulario a un controlador de formulario.
@@ -122,10 +124,9 @@ Un formulario con un botón de envío:
   <input type="submit" value="Submit">
 </form>
 ```
-
 Así es como se mostrará el código HTML anterior en un navegador:
 
-![Imagenes_Forms ](assets/formulario/.png)
+![Imagenes_Forms ](assets/formulario/btn_enviar.png)
 
 ### El atributo de nombre para <input>
 Tenga en cuenta que cada campo de entrada debe tener un nameatributo para ser enviado.
