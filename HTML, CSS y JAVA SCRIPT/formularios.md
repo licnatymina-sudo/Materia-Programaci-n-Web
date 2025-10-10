@@ -17,9 +17,8 @@ El elemento `<form>` es un contenedor para diferentes tipos de elementos de entr
 
 ## El elemento `<input>`
 
-El elemento HTML `<input>` es el elemento de formulario más utilizado.
-
-Un elemento `<input>` se puede mostrar de muchas maneras, dependiendo del type atributo.
+- El elemento HTML `<input>` es el elemento de formulario más utilizado.
+- Un elemento `<input>` se puede mostrar de muchas maneras, dependiendo del type atributo.
 
 A continuación se muestran algunos ejemplos:
 |                  Tipo             |                                      Descripción                                      |
@@ -31,7 +30,7 @@ A continuación se muestran algunos ejemplos:
 | `<tipo de entrada="button">`      | Muestra un botón en el que se puede hacer clic                                        |
 
 ### Text Fields
-Define `<input type="text">` un campo de entrada de una sola línea para la entrada de texto.
+- Define `<input type="text">` un campo de entrada de una sola línea para la entrada de texto.
 
 Ejemplo
 Un formulario con campos de entrada para texto:
@@ -51,18 +50,15 @@ Así es como se mostrará el código HTML anterior en un navegador:
 ### El elemento `<label>`
 Observe el uso del <label>elemento en el ejemplo anterior.
 
-La etiqueta `<label>`  define una etiqueta para muchos elementos de formulario.
+- La etiqueta `<label>`  define una etiqueta para muchos elementos de formulario.
+- El elemento `<label>`  es útil para los usuarios de lectores de pantalla, porque el lector de pantalla leerá en voz alta la etiqueta cuando el usuario se centre en el elemento de entrada.
+- El elemento `<label>` también ayuda a los usuarios que tienen dificultades para hacer clic en regiones muy pequeñas (como botones de opción o casillas de verificación), porque cuando el usuario hace clic en el texto dentro del `<label>` elemento, alterna el botón de opción o la casilla de verificación.
 
-El elemento `<label>`  es útil para los usuarios de lectores de pantalla, porque el lector de pantalla leerá en voz alta la etiqueta cuando el usuario se centre en el elemento de entrada.
-
-El elemento `<label>` también ayuda a los usuarios que tienen dificultades para hacer clic en regiones muy pequeñas (como botones de opción o casillas de verificación), porque cuando el usuario hace clic en el texto dentro del `<label>` elemento, alterna el botón de opción o la casilla de verificación.
-
-El atributo for de la etiqueta `<label>` debe ser igual al idatributo del `<input>` elemento para unirlos.
+- El atributo for de la etiqueta `<label>` debe ser igual al atributo id  del elemento `<input>`  para unirlos.
 
 ### Botones de radio
-El `<input type="radio">` define un botón de opción.
-
-Los botones de opción permiten al usuario seleccionar UNA de un número limitado de opciones.
+- El `<input type="radio">` define un botón de opción.
+- Los botones de opción permiten al usuario seleccionar UNA de un número limitado de opciones.
 
 **Ejemplo**
 
@@ -86,9 +82,8 @@ Así es como se mostrará el código HTML anterior en un navegador:
 
 
 ### Casillas de verificación
-El `<input type="checkbox">` define una casilla de verificación .
-
-Las casillas de verificación permiten al usuario seleccionar CERO o MÁS opciones de un número limitado de opciones.
+- El `<input type="checkbox">` define una casilla de verificación .
+- Las casillas de verificación permiten al usuario seleccionar CERO o MÁS opciones de un número limitado de opciones.
 
 Ejemplo
 Un formulario con casillas de verificación:
@@ -107,11 +102,11 @@ Así es como se mostrará el código HTML anterior en un navegador:
 ![Imagenes_Forms ](assets/formulario/btn_verif.png)
 
 ### El botón Enviar
-Define `<input type="submit">` un botón para enviar los datos del formulario a un controlador de formulario.
+- Define `<input type="submit">` un botón para enviar los datos del formulario a un controlador de formulario.
 
-El controlador de formulario normalmente es un archivo en el servidor con un script para procesar los datos de entrada.
+- El controlador de formulario normalmente es un archivo en el servidor con un script para procesar los datos de entrada.
 
-El controlador del formulario se especifica en el action atributo del formulario.
+- El controlador del formulario se especifica en el action atributo del formulario.
 
 **Ejemplo**
 Un formulario con un botón de envío:
@@ -129,9 +124,8 @@ Así es como se mostrará el código HTML anterior en un navegador:
 ![Imagenes_Forms ](assets/formulario/btn_enviar.png)
 
 ### El atributo de nombre para <input>
-Tenga en cuenta que cada campo de entrada debe tener un nameatributo para ser enviado.
-
-Si se omite el nameatributo, el valor del campo de entrada no se enviará en absoluto.
+- Tenga en cuenta que cada campo de entrada debe tener un nameatributo para ser enviado.
+- Si se omite el nameatributo, el valor del campo de entrada no se enviará en absoluto.
 
 **Ejemplo**
 Este ejemplo no enviará el valor del campo de entrada "Nombre": 
