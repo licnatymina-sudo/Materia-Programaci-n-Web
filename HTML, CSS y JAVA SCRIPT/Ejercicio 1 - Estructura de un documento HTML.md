@@ -35,8 +35,8 @@ Ahora, dentro de la etiqueta `<body>`, vamos a usar etiquetas de HTML para organ
 
 ### HTML
 
-![Codigo html Ejercicio 1 ](assets/CodigoEjer1_1.png)
-![Codigo html Ejercicio 1 ](assets/CodigoEjer1_2.png)
+![Codigo html Ejercicio 1 ](assets/ejer1/CodigoEjer1_1.png)
+![Codigo html Ejercicio 1 ](assets/ejer1/CodigoEjer1_2.png)
 
 ### Explicación de las etiquetas utilizadas:
 - `<header>`: Contenedor para el encabezado de la página, ideal para el nombre y la información de contacto.
@@ -92,7 +92,7 @@ Abre el archivo css/styles.css (créalo si no existe) y vamos a añadir los esti
 
   **3.1. Estilos Globales y de body**
    Estos estilos afectarán a todo el documento, definiendo la fuente, el color de fondo y el margen general.
-   ![Codigo html Ejercicio 1 ](assets/ccs_Curriculo1.png)
+   ![Codigo html Ejercicio 1 ](assets/ejer1/ccs_Curriculo1.png)
   
    **Explicación:**
 
@@ -106,7 +106,7 @@ Abre el archivo css/styles.css (créalo si no existe) y vamos a añadir los esti
 
 **3.2. Estilos para el Contenedor Principal (``main``) y ``hr``**
 Vamos a centrar el CV en la pantalla y darle un aspecto de "documento" con un fondo blanco y una sombra.   
-   ![Codigo html Ejercicio 1 ](assets/css_curriculo2.png)
+   ![Codigo html Ejercicio 1 ](assets/ejer1/css_curriculo2.png)
 
 **Explicación:**
 
@@ -125,7 +125,7 @@ Vamos a centrar el CV en la pantalla y darle un aspecto de "documento" con un fo
 **3.3. Estilos para el Encabezado (``header``)**
 El encabezado es la primera impresión. Le daremos un estilo claro y centrado.
 
-   ![Codigo html Ejercicio 1 ](assets/css_Curriculo3.png)
+   ![Codigo html Ejercicio 1 ](assets/ejer1/css_Curriculo3.png)
 
 **Explicación:**
 
@@ -140,7 +140,7 @@ El encabezado es la primera impresión. Le daremos un estilo claro y centrado.
 **3.4. Estilos para Secciones (``section``) y Títulos (``h2, h3``)**
 Cada sección del CV necesita un título claro y un espaciado adecuado.
 
-   ![Codigo html Ejercicio 1 ](assets/css_Curriculo4.png)
+   ![Codigo html Ejercicio 1 ](assets/ejer1/css_Curriculo4.png)
 
    **Explicación:**
 
@@ -153,7 +153,7 @@ Cada sección del CV necesita un título claro y un espaciado adecuado.
 **3.5. Estilos para Listas (`ul, li`)**
 Las listas son muy comunes en los CV (experiencia, habilidades), por lo que necesitamos que se vean limpias y legibles.
 
-   ![Codigo html Ejercicio 1 ](assets/css_curriculo5.png)
+   ![Codigo html Ejercicio 1 ](assets/ejer1/css_curriculo5.png)
 
 **Explicación:**
 
@@ -164,7 +164,7 @@ Las listas son muy comunes en los CV (experiencia, habilidades), por lo que nece
 **3.6. Estilos para el Pie de Página (footer)**
 El pie de página será simple, con información de derechos de autor.
 
-   ![Codigo html Ejercicio 1 ](assets/css_Curriculo6.png)
+   ![Codigo html Ejercicio 1 ](assets/ejer1/css_Curriculo6.png)
 
    **Explicación:**
 
@@ -176,10 +176,10 @@ El pie de página será simple, con información de derechos de autor.
 
 Por último agrega estilo responsivo a tu `HTML`
 
-   ![Codigo html Ejercicio 1 ](assets/css_Curriculo7.png)
+   ![Codigo html Ejercicio 1 ](assets/ejer1/css_Curriculo7.png)
 
    **Visualiza tu Curriculum creado con HTML y CSS**
    
-   ![Codigo html Ejercicio 1 ](assets/EjecucionCurriculo.png)
+   ![Codigo html Ejercicio 1 ](assets/ejer1/EjecucionCurriculo.png)
    
 
