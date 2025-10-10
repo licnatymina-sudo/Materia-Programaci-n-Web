@@ -101,3 +101,5 @@ El gato juega en el jardin
 
 Así es como se mostrará el código HTML anterior en un navegador:
 
+![Codigo html Ejercicio 1 ](assets/formulario/text_area_1.png)
+
