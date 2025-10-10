@@ -60,7 +60,7 @@ Explicación de las etiquetas semánticas:
 ### Paso 4: ¡Visualiza tu Blog!
 Guarda el archivo y ábrelo con tu navegador. Verás tu blog estructurado y listo. Aunque no tendrá estilos visuales, la estructura lógica está completa y optimizada para cualquier navegador o motor de búsqueda.
 
-![Codigo html Ejercicio 1 ](assets/BlogSinCss.png)
+![Codigo html Ejercicio 1 ](assets/ejer2/BlogSinCss.png)
 
 ## Aplicar estilos al Blog
 
@@ -102,7 +102,7 @@ Incluye el siguiente código para el primer artículo
 Incluye el siguiente enlace para el segundo artículo  
     ``<img src="img/article2-thumb.jpg" alt="Gráficos de datos en una pantalla" class="article-img">``
 
-![Codigo html Ejercicio 1 ](assets/agregar_imagen_al_blog.png)
+![Codigo html Ejercicio 1 ](assets/ejer2/agregar_imagen_al_blog.png)
 
 ### Paso 4: Escribir el Código CSS
 Abre el archivo css/styles.css y escribe el siguiente código. He añadido comentarios para que comprendas la función de cada sección
@@ -115,7 +115,7 @@ Abre el archivo css/styles.css y escribe el siguiente código. He añadido comen
 ### Paso 5: ¡Visualiza tu Blog con Estilo!
 Guarda todos los archivos, abre index.html en tu navegador y verás cómo la página de tu blog ahora luce profesional, organizada y con un diseño limpio.
 
-![Codigo html Ejercicio 1 ](assets/BlogconCss.png)
+![Codigo html Ejercicio 1 ](assets/ejer2/BlogconCss.png)
 
 
 
