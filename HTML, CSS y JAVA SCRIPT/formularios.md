@@ -34,7 +34,7 @@ Define `<input type="text">` un campo de entrada de una sola línea para la entr
 Ejemplo
 Un formulario con campos de entrada para texto:
 
-```
+```HTML
 <form>
   <label for="fname">First name:</label><br>
   <input type="text" id="fname" name="fname"><br>
@@ -43,4 +43,6 @@ Un formulario con campos de entrada para texto:
 </form>
 ````
 Así es como se mostrará el código HTML anterior en un navegador:
+
+![Codigo html Ejercicio 1 ](assets/ejer2/CodEjer2_pte2.png)
 
