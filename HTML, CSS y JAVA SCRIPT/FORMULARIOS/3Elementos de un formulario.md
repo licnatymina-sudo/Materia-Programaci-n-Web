@@ -17,7 +17,7 @@ El elemento HTML <form>puede contener uno o más de los siguientes elementos de 
 - `<optgroup>`
 
 ## El elemento <input>
-Uno de los elementos de formulario más utilizados es el <input>elemento.
+Uno de los elementos de formulario más utilizados es el elemento `<input>`.
 
 El elemento `<input>` se puede mostrar de varias maneras, dependiendo del type atributo.
 
