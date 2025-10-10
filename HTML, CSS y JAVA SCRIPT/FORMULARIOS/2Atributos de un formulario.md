@@ -1,8 +1,8 @@
-### Atributos de formulario HTML
-Este lección describe los diferentes atributos del `<form>`elemento HTML.
+# Atributos de formulario HTML
+Esta lección describe los diferentes atributos del `<form>`elemento HTML.
 
 ## El atributo de acción
-- El actionatributo define la acción que se realizará cuando se envía el formulario.
+- El atributo action  define la acción que se realizará cuando se envía el formulario.
 
 - Normalmente, los datos del formulario se envían a un archivo en el servidor cuando el usuario hace clic en el botón enviar.
 
@@ -25,7 +25,7 @@ En el siguiente ejemplo, los datos del formulario se envían a un archivo llamad
 - El targetatributo especifica dónde mostrar la respuesta que se recibe después de enviar el formulario.
 
 - El targetatributo puede tener uno de los siguientes valores:
-|-------------------|----------------------------------------------------------|
+
 |      Value	      |              Description                                 | 
 |-------------------|----------------------------------------------------------|
 |_blank           	|The response is displayed in a new window or tab          |
@@ -33,7 +33,7 @@ En el siguiente ejemplo, los datos del formulario se envían a un archivo llamad
 |_parent          	|The response is displayed in the parent frame             |
 |_top	              |The response is displayed in the full body of the window  |
 |framename         	|The response is displayed in a named iframe               |
-|-------------------|----------------------------------------------------------|
+
 
 El valor predeterminado es , _selflo que significa que la respuesta se abrirá en la ventana actual.
 
