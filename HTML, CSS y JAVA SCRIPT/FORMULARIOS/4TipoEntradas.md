@@ -106,5 +106,69 @@ Si omite el atributo de valor del botón Enviar, el botón obtendrá un texto pr
 
 ![Codigo html text_area ](assets/entrada_reset.png)
 
+## Tipo de entrada Radio
+`<input type="radio">` define un botón de opción .
+
+Los botones de opción permiten al usuario seleccionar SÓLO UNA de un número limitado de opciones:
+
+**Ejemplo**
+```HTML
+<p>Choose your favorite Web language:</p>
+
+<form>
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">HTML</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">CSS</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">JavaScript</label>
+</form>
+```
+
+Así es como se mostrará el código HTML anterior en un navegador:
+![Codigo html text_area ](assets/entrada_radio.png)
+
+## Casilla de verificación de tipo de entrada
+`<input type="checkbox">`define una casilla de verificación .
+
+Las casillas de verificación permiten al usuario seleccionar CERO o MÁS opciones de un número limitado de opciones.
+
+**Ejemplo**
+```HTML
+<form>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> I have a boat</label>
+</form>
+```
+
+Así es como se mostrará el código HTML anterior en un navegador:
+
+![Codigo html text_area ](assets/entrada_casilla.png)
+
+## Botón de tipo de entrada
+`<input type="button">` define un botón :
+
+**Ejemplo**
+`<input type="button" onclick="alert('Hello World!')" value="Click Me!">`
+
+Así es como se mostrará el código HTML anterior en un navegador:
+![Codigo html text_area ](assets/entrada_boton.png)
 
 
+## Tipo de entrada Color
+Se `<input type="color">`utiliza para campos de entrada que deben contener un color.
+
+Dependiendo de la compatibilidad del navegador, puede aparecer un selector de color en el campo de entrada.
+
+**Ejemplo**
+```HTML
+<form>
+  <label for="favcolor">Select your favorite color:</label>
+  <input type="color" id="favcolor" name="favcolor">
+</form>
+```
+![Codigo html text_area ](assets/entrada_color.png)
