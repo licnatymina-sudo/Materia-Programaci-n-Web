@@ -126,6 +126,7 @@ Los botones de opción permiten al usuario seleccionar SÓLO UNA de un número l
 ```
 
 Así es como se mostrará el código HTML anterior en un navegador:
+
 ![Codigo html text_area ](assets/entrada_radio.png)
 
 ## Casilla de verificación de tipo de entrada
@@ -156,6 +157,7 @@ Así es como se mostrará el código HTML anterior en un navegador:
 `<input type="button" onclick="alert('Hello World!')" value="Click Me!">`
 
 Así es como se mostrará el código HTML anterior en un navegador:
+
 ![Codigo html text_area ](assets/entrada_boton.png)
 
 
