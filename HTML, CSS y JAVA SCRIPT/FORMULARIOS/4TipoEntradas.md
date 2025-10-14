@@ -39,6 +39,7 @@ Ejemplo
   <input type="text" id="lname" name="lname">
 </form>
 ```
+![Codigo html text_area ](assets/area_texto.png)
 
 ## Tipo de entrada Contraseña
 `<input type="password">` define un campo de contraseña :
@@ -52,6 +53,8 @@ Ejemplo
   <input type="password" id="pwd" name="pwd">
 </form>
 ```
+![Codigo html text_area ](assets/area_texto.png)
+
 **Los caracteres en un campo de contraseña están enmascarados (se muestran como asteriscos o círculos).**
 
 ## Tipo de entrada Enviar
@@ -71,6 +74,7 @@ El controlador del formulario se especifica en el action atributo del formulario
   <input type="submit" value="Submit">
 </form>
 ```
+![Codigo html text_area ](assets/area_texto.png)
 
 Si omite el atributo de valor del botón Enviar, el botón obtendrá un texto predeterminado:
 
@@ -99,4 +103,8 @@ Si omite el atributo de valor del botón Enviar, el botón obtendrá un texto pr
   <input type="reset" value="Reset">
 </form>
 ```
+
+![Codigo html text_area ](assets/area_texto.png)
+
+
 
