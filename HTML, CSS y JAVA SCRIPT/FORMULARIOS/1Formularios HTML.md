@@ -11,7 +11,7 @@ form elements
 .
 </form>
 ```
-![Imegenes_Form ](/assets/formulario/formulario.png)
+![Imegenes_Form ](/assets/formulario.png)
 
 El elemento `<form>` es un contenedor para diferentes tipos de elementos de entrada, como: campos de texto, casillas de verificación, botones de opción, botones de envío, etc.
 
@@ -45,7 +45,7 @@ Un formulario con campos de entrada para texto:
 ````
 Así es como se mostrará el código HTML anterior en un navegador:
 
-![Imagenes_Forms ](assets/formulario/c_textos.png)
+![Imagenes_Forms ](assets/c_textos.png)
 
 ### El elemento `<label>`
 Observe el uso del <label>elemento en el ejemplo anterior.
@@ -78,7 +78,7 @@ Un formulario con botones de opción:
 
 Así es como se mostrará el código HTML anterior en un navegador:
 
-![Imagenes_Forms ](assets/formulario/btn_radio.png)
+![Imagenes_Forms ](assets/btn_radio.png)
 
 
 ### Casillas de verificación
@@ -99,7 +99,7 @@ Un formulario con casillas de verificación:
 ```
 Así es como se mostrará el código HTML anterior en un navegador:
 
-![Imagenes_Forms ](assets/formulario/btn_verif.png)
+![Imagenes_Forms ](assets/btn_verif.png)
 
 ### El botón Enviar
 - Define `<input type="submit">` un botón para enviar los datos del formulario a un controlador de formulario.
@@ -121,7 +121,7 @@ Un formulario con un botón de envío:
 ```
 Así es como se mostrará el código HTML anterior en un navegador:
 
-![Imagenes_Forms ](assets/formulario/btn_enviar.png)
+![Imagenes_Forms ](assets/btn_enviar.png)
 
 ### El atributo de nombre para <input>
 - Tenga en cuenta que cada campo de entrada debe tener un nameatributo para ser enviado.
