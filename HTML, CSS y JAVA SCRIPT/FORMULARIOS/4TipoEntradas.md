@@ -25,7 +25,7 @@ Estos son los diferentes tipos de entrada que puedes utilizar en HTML:
 <input type="url">
 <input type="week">
 ```
-**Consejo: El valor predeterminado del typeatributo es "texto".**
+**Consejo: El valor predeterminado del type atributo es "texto".**
 
 ## Tipo de entrada Texto
 `<input type="text">` define un campo de entrada de texto de una sola línea :
@@ -39,7 +39,7 @@ Ejemplo
   <input type="text" id="lname" name="lname">
 </form>
 ```
-![Codigo html text_area ](assets/area_texto.png)
+![Codigo html text_area ](assets/entrada_texto.png)
 
 ## Tipo de entrada Contraseña
 `<input type="password">` define un campo de contraseña :
@@ -53,7 +53,7 @@ Ejemplo
   <input type="password" id="pwd" name="pwd">
 </form>
 ```
-![Codigo html text_area ](assets/area_texto.png)
+![Codigo html text_area ](assets/entrada_password.png)
 
 **Los caracteres en un campo de contraseña están enmascarados (se muestran como asteriscos o círculos).**
 
@@ -74,7 +74,7 @@ El controlador del formulario se especifica en el action atributo del formulario
   <input type="submit" value="Submit">
 </form>
 ```
-![Codigo html text_area ](assets/area_texto.png)
+![Codigo html text_area ](assets/Entrada_enviar.png)
 
 Si omite el atributo de valor del botón Enviar, el botón obtendrá un texto predeterminado:
 
@@ -104,7 +104,7 @@ Si omite el atributo de valor del botón Enviar, el botón obtendrá un texto pr
 </form>
 ```
 
-![Codigo html text_area ](assets/area_texto.png)
+![Codigo html text_area ](assets/entrada_reset.png)
 
 
 
