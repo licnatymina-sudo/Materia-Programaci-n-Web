@@ -16,7 +16,7 @@ El elemento HTML <form>puede contener uno o más de los siguientes elementos de 
 - `<option>`
 - `<optgroup>`
 
-## El elemento <input>
+## El elemento `<input>`
 Uno de los elementos de formulario más utilizados es el elemento `<input>`.
 
 El elemento `<input>` se puede mostrar de varias maneras, dependiendo del type atributo.
@@ -28,7 +28,7 @@ Ejemplo
 ```
 Todos los diferentes valores del type atributo se tratan en el siguiente capítulo: Tipos de entrada HTML .
 
-## El elemento <label>
+## El elemento `<label>`
 - El elemento `<label>` define una etiqueta para varios elementos de formulario.
 
 - El elemento `<label>` es útil para los usuarios de lectores de pantalla, porque el lector de pantalla leerá en voz alta la etiqueta cuando el usuario se centre en el elemento de entrada.
@@ -37,7 +37,7 @@ Todos los diferentes valores del type atributo se tratan en el siguiente capítu
 
 - El atributo for  de la etiqueta `<label>` debe ser igual al idatributo del <input> elemento para unirlos.
 
-## El elemento <select>
+## El elemento `<select>`
 El elemento `<select>` define una lista desplegable:
 
 **Ejemplo**
@@ -86,7 +86,7 @@ Utilice el atributo **multiple** para permitir que el usuario seleccione más de
 </select>
 ```
 
-## El elemento <textarea>
+## El elemento `<textarea>`
 El elemento `<textarea>` define un campo de entrada de varias líneas (un área de texto):
 
 **Ejemplo**
@@ -101,5 +101,5 @@ El gato juega en el jardin
 
 Así es como se mostrará el código HTML anterior en un navegador:
 
-![Codigo html Ejercicio 1 ](assets/formulario/text_area_1.png)
+![Codigo html text_area ](assets/formulario/text_area_1.png)
 
