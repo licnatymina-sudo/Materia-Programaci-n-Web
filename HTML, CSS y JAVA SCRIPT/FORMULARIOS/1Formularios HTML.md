@@ -11,7 +11,7 @@ form elements
 .
 </form>
 ```
-![Imegenes_Form ](assets/formulario/formulario.png)
+![Imegenes_Form ](/assets/formulario/formulario.png)
 
 El elemento `<form>` es un contenedor para diferentes tipos de elementos de entrada, como: campos de texto, casillas de verificación, botones de opción, botones de envío, etc.
 
