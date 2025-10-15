@@ -6,6 +6,7 @@ Vamos a añadir el formulario a tu archivo index.html, justo después de la secc
 ### Inclusión del Formulario en index.html
 - Localiza la etiqueta de cierre de tu sección de contacto (`</section>`) dentro del `<main>` y agrega el siguiente código justo después:
 
+![Codigo html text_area ](assets/entrada_texto.png)
 
 ### Explicación de la Estructura HTML del Formulario
 - `<section id="newsletter-signup">`: Creamos una nueva sección para el formulario. Esto es fundamental para la semántica del documento.
