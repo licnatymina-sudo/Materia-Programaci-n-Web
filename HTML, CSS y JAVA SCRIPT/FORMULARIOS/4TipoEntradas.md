@@ -188,6 +188,7 @@ Así es como se mostrará el código HTML anterior en un navegador:
   <input type="date" id="birthday" name="birthday">
 </form>
 ```
+![Codigo html text_area ](assets/entrada_fecha.png)
 También puedes utilizar los atributos miny maxpara agregar restricciones a las fechas:
 
 **Ejemplo**
@@ -211,7 +212,7 @@ También puedes utilizar los atributos miny maxpara agregar restricciones a las 
   <input type="datetime-local" id="birthdaytime" name="birthdaytime">
 </form>
 ```
-
+![Codigo html text_area ](assets/entrada_fecha_hr.png)
 ## Tipo de entrada Correo electrónico
 - Se `<input type="email">` utiliza para campos de entrada que deben contener una dirección de correo electrónico.
 
@@ -238,7 +239,7 @@ También puedes utilizar los atributos miny maxpara agregar restricciones a las 
 <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48">
 </form>
 ```
-
+![Codigo html text_area ](assets/entrada_imagen.png)
 ## Archivo de tipo de entrada
 Define `<input type="file">` un campo de selección de archivos y un botón "Explorar" para cargar archivos.
 
@@ -281,7 +282,7 @@ Dependiendo de la compatibilidad del navegador, puede aparecer un selector de fe
   <input type="month" id="bdaymonth" name="bdaymonth">
 </form>
 ```
-
+![Codigo html text_area ](assets/entrada_mes.png)
 ## Número de tipo de entrada
 El `<input type="number">` define un campo de entrada numérica .
 
@@ -296,3 +297,5 @@ El `<input type="number">` define un campo de entrada numérica .
   <input type="number" id="quantity" name="quantity" min="1" max="5">
 </form>
 ```
+![Codigo html text_area ](assets/entrada_numero_rango.png)
+
