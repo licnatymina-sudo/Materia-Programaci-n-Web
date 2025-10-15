@@ -27,7 +27,7 @@ Vamos a añadir el formulario a tu archivo index.html, justo después de la secc
 
 - `<input type="text" id="name" name="name" ... required>`: El campo de entrada de texto.
 
-`type="text" o type="email"`: Define el tipo de dato que se espera. email activa el teclado de email en móviles.
+- `type="text" o type="email"`: Define el tipo de dato que se espera. email activa el teclado de email en móviles.
 
 - id y name: El id se usa con el label y el name es lo que usará el backend para identificar el dato.
 
@@ -37,7 +37,7 @@ Vamos a añadir el formulario a tu archivo index.html, justo después de la secc
 
 - `<button type="submit" class="subscribe-btn">`: El botón que activa el envío del formulario.
 
-El formulario se vería de la siguiente manera:
+**El formulario se vería de la siguiente manera:**
 ![Codigo html text_area ](assets/FormularioHTML.png)
 
 ## Paso 2: Aplicación de Estilos CSS al Formulario
@@ -46,17 +46,19 @@ Ahora vamos a darle un estilo profesional al formulario dentro de tu archivo css
 ### Estilos para la Nueva Sección y Contenedor del Formulario
 Añade los siguientes estilos a tu styles.css. Puedes colocarlos al final del bloque de estilos de las secciones.
 
-![Codigo html text_area ](assets/FormularioHTML.png)
+![Codigo html text_area ](assets/FormBlogcss1.png)
 
 **Explicación:**
 
-#newsletter-signup: Le damos un fondo gris claro (#e9ecef) y relleno (padding: 40px) para que la sección de suscripción resalte del fondo general de la página.
+- #newsletter-signup: Le damos un fondo gris claro (#e9ecef) y relleno (padding: 40px) para que la sección de suscripción resalte del fondo general de la página.
 
-h2: Cambiamos el color a azul primario (#007bff) y eliminamos el borde inferior que usamos en otros títulos de sección para darle un aspecto más limpio.
+- h2: Cambiamos el color a azul primario (#007bff) y eliminamos el borde inferior que usamos en otros títulos de sección para darle un aspecto más limpio.
 
-.form-description: Un estilo simple para que el texto sea legible y persuasivo.
+- .form-description: Un estilo simple para que el texto sea legible y persuasivo.
 
-2.2. Estilos para los Campos y el Botón
+![Codigo html text_area ](assets/FormBlogCss_1.png)
+
+### Estilos para los Campos y el Botón
 Ahora aplicamos estilos específicos a los grupos de entrada, los campos y el botón.
 
 CSS
