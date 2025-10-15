@@ -38,6 +38,7 @@ Vamos a añadir el formulario a tu archivo index.html, justo después de la secc
 - `<button type="submit" class="subscribe-btn">`: El botón que activa el envío del formulario.
 
 **El formulario se vería de la siguiente manera:**
+
 ![Codigo html text_area ](assets/FormularioHTML.png)
 
 ## Paso 2: Aplicación de Estilos CSS al Formulario
@@ -66,6 +67,7 @@ Ahora aplicamos estilos específicos a los grupos de entrada, los campos y el bo
 ![Codigo html text_area ](assets/Formcss_Blog2.png)
 
 El Blog se vería así, hasta el momento:
+
 ![Codigo html text_area ](assets/Formcss_blog_2.png)
 
 /* Estilos del Botón de Suscripción */
