@@ -150,7 +150,7 @@ Así es como se mostrará el código HTML anterior en un navegador:
 
 ![Codigo html text_area ](assets/entrada_casilla.png)
 
-## Tipo de entrada Botón de
+## Tipo de entrada Botón
 - `<input type="button">` define un botón :
 
 **Ejemplo**
