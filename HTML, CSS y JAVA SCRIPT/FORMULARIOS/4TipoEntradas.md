@@ -240,7 +240,7 @@ También puedes utilizar los atributos miny maxpara agregar restricciones a las 
 </form>
 ```
 ![Codigo html text_area ](assets/entrada_imagen.png)
-## Archivo de tipo de entrada
+## Tipo de entrada Archivo
 Define `<input type="file">` un campo de selección de archivos y un botón "Explorar" para cargar archivos.
 
 **Ejemplo**
@@ -283,7 +283,7 @@ Dependiendo de la compatibilidad del navegador, puede aparecer un selector de fe
 </form>
 ```
 ![Codigo html text_area ](assets/entrada_mes.png)
-## Número de tipo de entrada
+## Tipo de entrada Número
 El `<input type="number">` define un campo de entrada numérica .
 
 - También puedes establecer restricciones sobre qué números se aceptan.
