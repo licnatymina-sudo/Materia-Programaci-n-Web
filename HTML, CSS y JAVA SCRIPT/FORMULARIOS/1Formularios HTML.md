@@ -1,9 +1,6 @@
 # Formularios HTML
 Se utiliza un formulario HTML para recopilar la información del usuario. Esta información suele enviarse a un servidor para su procesamiento. Son fundamentales en el desarrollo de aplicaciones web, ya que permiten la interacción entre el usuario y la aplicación (por ejemplo: registrarse, iniciar sesión, enviar comentarios o subir archivos).
 
-   [![Video de crear FORMULARIOS, da clic aqui](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=AvuueiWEP7GNWMTd)
-  
-
 ## El elemento `<form>`
 El `<form>` elemento HTML se utiliza para crear un formulario HTML para la entrada del usuario:
 
@@ -126,7 +123,7 @@ Así es como se mostrará el código HTML anterior en un navegador:
 
 ![Imagenes_Forms ](assets/btn_enviar.png)
 
-### El atributo de nombre para <input>
+### El atributo de nombre para `<input>`
 - Tenga en cuenta que cada campo de entrada debe tener un nameatributo para ser enviado.
 - Si se omite el nameatributo, el valor del campo de entrada no se enviará en absoluto.
 
