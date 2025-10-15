@@ -129,7 +129,7 @@ Así es como se mostrará el código HTML anterior en un navegador:
 
 ![Codigo html text_area ](assets/entrada_radio.png)
 
-## Casilla de verificación de tipo de entrada
+## Tipo de entrada Casilla de verificación
 - `<input type="checkbox">`define una casilla de verificación .
 
 - Las casillas de verificación permiten al usuario seleccionar CERO o MÁS opciones de un número limitado de opciones.
@@ -150,7 +150,7 @@ Así es como se mostrará el código HTML anterior en un navegador:
 
 ![Codigo html text_area ](assets/entrada_casilla.png)
 
-## Botón de tipo de entrada
+## Tipo de entrada Botón de
 - `<input type="button">` define un botón :
 
 **Ejemplo**
