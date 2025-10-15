@@ -1,6 +1,10 @@
 # Formularios HTML
 Se utiliza un formulario HTML para recopilar la información del usuario. Esta información suele enviarse a un servidor para su procesamiento. Son fundamentales en el desarrollo de aplicaciones web, ya que permiten la interacción entre el usuario y la aplicación (por ejemplo: registrarse, iniciar sesión, enviar comentarios o subir archivos).
 
+    [![Title of your video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=AvuueiWEP7GNWMTd)
+    
+    https://youtu.be/VLeERv_dR6Q?si=AvuueiWEP7GNWMTd
+
 ## El elemento `<form>`
 El `<form>` elemento HTML se utiliza para crear un formulario HTML para la entrada del usuario:
 
