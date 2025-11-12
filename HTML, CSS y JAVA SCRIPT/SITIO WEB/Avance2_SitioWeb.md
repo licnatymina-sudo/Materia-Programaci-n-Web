@@ -17,6 +17,8 @@ EN EL ARCHIVO CSS escribe:
 Esto permitira adaptar la barra de navegación en dispositivos con un tamaño de 768px.
 
 ### PASO B. Modificar la clase contenedor.
+Observa que la barra de navegación aun no se adapta a otros dispositivos con pantallas mas pequeñas.
+![Codigo html Ejercicio 1 ](assets/ejer1/CodigoEjer1_1.png)
 EN EL ARCHIVO CSS..
 La clase contenedor debe tener las siguientes propiedades:
 ```css
