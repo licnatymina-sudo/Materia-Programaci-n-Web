@@ -47,7 +47,7 @@ Modificamos la clase .navegacion-principal y agregamos las siguientes 2 lineas:
 	}
 ```
 ### PASO D. Mover la propiedad justyfy-content
-EN EL ARCHIVO CSS..
+En el archivo CSS..
 Ahora movemos el **justyfy-cotent: space-between** ubicado en **.navegacion-principal** al **@media**, esto es para permitir adaptarse en dispositivos de 768px
 ```css
 	@media(min-width:768px{
@@ -85,9 +85,9 @@ Ahora agregue los estilos
     background-size: cover;
 }
 ```
--- Agregamos `background-image: url(../hero.jpg);` para especificar una imagen de fondo para la **sección** de la clase **hero**.
--- Debido a que la imagen se repite en pantallas grandes, utilizaremos `background-repeat: no-repeat;`
--- Ahora podrás ver que la imagen en algunos dispositivos no abarca toda la pantalla, utilizamos la propiedad: `background-size: cover;` y la imagen tomara todo el ancho disponible
+- Agregamos `background-image: url(../hero.jpg);` para especificar una imagen de fondo para la **sección** de la clase **hero**.
+- Debido a que la imagen se repite en pantallas grandes, utilizaremos `background-repeat: no-repeat;`
+- Ahora podrás ver que la imagen en algunos dispositivos no abarca toda la pantalla, utilizamos la propiedad: `background-size: cover;` y la imagen tomara todo el ancho disponible
 
 ## Diseño de Caja - Box Model
 “Una de las cosas que menos me gustan del diseño con CSS es la relación entre el ancho y el relleno. Estás ocupado definiendo anchos para que coincidan con la cuadrícula o las proporciones generales de las columnas, y luego empiezas a añadir texto, lo que requiere definir el relleno para esos recuadros. Y, ¡oh sorpresa!, ahora estás restando píxeles al ancho original para que el recuadro no se expanda.” (**Paul Irlandes**)
@@ -112,7 +112,7 @@ Para darle un estilo de sobra a la imagen de fondo que se muestra en nuestro sit
 ![SitioWeb](imagenes/imagen_fondo.png)
 
 ### PASO A: Agregar un contenedor div
--- Primero agregaremos en contenedor div en nuestra etiqueta `<section class=”hero”>` en nuestro html, esto es para poder manipular mejor la imagen que se coloca de fondo y los elementos de la sección.
+- Primero agregaremos en contenedor div en nuestra etiqueta `<section class=”hero”>` en nuestro html, esto es para poder manipular mejor la imagen que se coloca de fondo y los elementos de la sección.
 
 ```html
 <section class=hero>
@@ -123,7 +123,7 @@ Para darle un estilo de sobra a la imagen de fondo que se muestra en nuestro sit
 ```
 
 ### PASO B: Agregar estilos
--- Ahora en el css, agregamos los siguientes estilos:
+- Ahora en el css, agregamos los siguientes estilos:
 ```css
 .contenido-hero{
 		background-color:rgba(0,0,0,.7)   /*Definimos el color negro con un .7 de trasparencia*/
@@ -133,8 +133,8 @@ Para darle un estilo de sobra a la imagen de fondo que se muestra en nuestro sit
 ```
 ### PASO C: Modificar LA CLASE .hero{ --}
 Agregamos las propiedades:
--- `position:relative;` en la clase .hero{ - -} ya que fungirá como el elemento hijo, para que su posición sea en base a la posición que tenga el elemento o clase .hero.
--- `position: absolute; ` en la clase .contenido-hero ya que fungirá como el elemento padre, y su posición determinará la del elemento de la clase .hero.
+- `position:relative;` en la clase .hero{ - -} ya que fungirá como el elemento hijo, para que su posición sea en base a la posición que tenga el elemento o clase .hero.
+- `position: absolute; ` en la clase .contenido-hero ya que fungirá como el elemento padre, y su posición determinará la del elemento de la clase .hero.
 ```css
 .hero{
 	position:relative;
@@ -151,10 +151,10 @@ Agregamos las propiedades:
 
 ### PASO A: Centrar contenido de la clase hero
 La clase **hero** representa el contenedor que contiene un **h2** y el **icono** de ubicaciónmy el párrafo, estos elementos aun se encuentran alineados a la izquierda, nuestro propósito será centrarlo, tanto vertical como horizontalmente. Para esto se hará uso del display flex.
--- display: flex es una propiedad CSS que se aplica a un contenedor para organizar sus elementos (ítems) de forma unidimensional, ya sea en fila o columna, permitiendo un control preciso sobre la alineación y distribución del espacio. 
+- display: flex es una propiedad CSS que se aplica a un contenedor para organizar sus elementos (ítems) de forma unidimensional, ya sea en fila o columna, permitiendo un control preciso sobre la alineación y distribución del espacio. 
 
--- Cuando aplicamos **display: flex**, y dejamos el valor por default en **flex-direction:row** alineamos horizontalmente con **justify-content** siempre y cuando no tengamos un **flex-direction:column**  y alineamos verticalmente con **align-itens:center;**
--- Pero cuando tenemos un **flex-direction:column** alineamos horizontalmente con **align-items:center**, y verticalmente con **justify-content:center**.
+- Cuando aplicamos **display: flex**, y dejamos el valor por default en **flex-direction:row** alineamos horizontalmente con **justify-content** siempre y cuando no tengamos un **flex-direction:column**  y alineamos verticalmente con **align-itens:center;**
+- Pero cuando tenemos un **flex-direction:column** alineamos horizontalmente con **align-items:center**, y verticalmente con **justify-content:center**.
 
 En la clase agrega los siguientes propiedades:
 ```css
@@ -227,12 +227,12 @@ En el archivo css, escribimos:
 }
 ```
 ## Aplicar estilo a los botones
--- Primero crearemos una clase llamada **boton** en el enlace que crea al botón Contactar:
+- Primero crearemos una clase llamada **boton** en el enlace que crea al botón Contactar:
 ```html
 	<a class="boton" href="#">Contactar</a>
 ```
 
--- Nos ubicamos debajo de la clase **.contenedor** y escrimos el css para la clase .boton
+- Nos ubicamos debajo de la clase **.contenedor** y escrimos el css para la clase .boton
 ```css
 .boton{
 	backgroun-color: var(--secundario);   /*Para el color de fondo del botón*/
@@ -251,11 +251,14 @@ En el archivo css, escribimos:
 }
 ```
 Ahora escribimos un media queries para resetear el botón en cuanto a su proporción cuando la pantalla sea de 780px, escribiendo:
+
+```css
 @media (min-width:768px){
-.boton{
-        Width: auto;
-     }
+	.boton{
+    	    Width: auto;
+     	}
 }
+```
 NOTA; VISUALIZALO EN LA APLICACIION  RESPONSIVE, YOBSERVA COMO SE ADAPTA A LOS DISTINTOS TAMAÑOS DE PANTALLAS.
 
 
