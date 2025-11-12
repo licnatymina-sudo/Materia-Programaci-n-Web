@@ -222,6 +222,7 @@ En el archivo css, escribimos:
 ```css
 .ubicación{
 	Display: flex; Este nos permitirá organizar el contenido de nuestro div, en este caso organizara los elementos como una fila, uno a lado del otro.
+	justify-content:center; 
 	Ahora ubicaremos el texto en la parte de abajo, ya que aparece arriba a lado del icono. Para esto escribe:
 	Align-item: flex-end;  esto permitirá alinearlo verticalmente, y colocarlo en la parte de abajo.
 }
