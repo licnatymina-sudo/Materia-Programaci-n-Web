@@ -109,35 +109,154 @@ Este código permitirá seleccionar todos los elementos html, y aplicar el box-s
 
 ## Agregar una sombra a la imagen
 Para darle un estilo de sobra a la imagen de fondo que se muestra en nuestro sitio web, tal y como se muestra en la siguiente imagen, debemos realizar lo siguiente:
-![SitioWeb](imagenes/responsive2.png)
-Primero agregaremos en contenedor div en nuestra etiqueta <section class=”hero”> en nuestro html, esto es para poder manipular mejor la imagen que se coloca de fondo y los elementos de la sección.
+![SitioWeb](imagenes/imagen_fondo.png)
 
+### PASO A: Agregar un contenedor div
+-- Primero agregaremos en contenedor div en nuestra etiqueta `<section class=”hero”>` en nuestro html, esto es para poder manipular mejor la imagen que se coloca de fondo y los elementos de la sección.
+
+```html
 <section class=hero>
-<div class=”contenido-hero”>
-… aquí agregamos el contenido del section
-</div>
+	<div class=”contenido-hero”>
+		… aquí agregamos el contenido de toda la section
+	</div>
 </section>
+```
 
-Ahora en el css, agregamos los siguientes estilos:
-
+### PASO B: Agregar estilos
+-- Ahora en el css, agregamos los siguientes estilos:
+```css
 .contenido-hero{
-
-Background-color:rgba(0,0,0,.7) /*Definimos el color negro con un .7 de trasparencia*/
-Width:100%;  /*con un ancho del 100% dentro del contenedor div*/
-Height:100%; /*con un alto del 100%*/
+		background-color:rgba(0,0,0,.7)   /*Definimos el color negro con un .7 de trasparencia*/
+		width:100%;    /*con un ancho del 100% dentro del contenedor div*/
+		height:100%;   /*con un alto del 100%*/
 }
+```
+### PASO C: Modificar LA CLASE .hero{ --}
 Agregamos las propiedades:
-Position:relative;   en la clase .hero{ - -} ya que fungirá como el elemento hijo, para que su posición sea en base a la posición que tenga el elemento o clase .hero.
-Position: absolute;  en la clase .contenido-hero ya que fungirá como el elemento padre, y su posición determinará la del elemento de la clase .hero.
+-- `position:relative;` en la clase .hero{ - -} ya que fungirá como el elemento hijo, para que su posición sea en base a la posición que tenga el elemento o clase .hero.
+-- `position: absolute; ` en la clase .contenido-hero ya que fungirá como el elemento padre, y su posición determinará la del elemento de la clase .hero.
+```css
 .hero{
-Position:relative;
+	position:relative;
 }
-.contenido-hero{
-	Position:absolute;
-Background-color:rgba(0,0,0,.7) /*Definimos el color negro con un .7 de trasparencia*/
-Width:100%;  /*con un ancho del 100% dentro del contenedor div*/
-Height:100% /*con un alto del 100%*/
 
+.contenido-hero{
+	position:absolute;
+	background-color:rgba(0,0,0,.7) /*Definimos el color negro con un .7 de trasparencia*/
+	width:100%;  /*con un ancho del 100% dentro del contenedor div*/
+	height:100% /*con un alto del 100%*/
+}
+```
+## CSS a los heading
+
+### PASO A: Centrar contenido de la clase hero
+La clase **hero** representa el contenedor que contiene un **h2** y el **icono** de ubicaciónmy el párrafo, estos elementos aun se encuentran alineados a la izquierda, nuestro propósito será centrarlo, tanto vertical como horizontalmente. Para esto se hará uso del display flex.
+-- display: flex es una propiedad CSS que se aplica a un contenedor para organizar sus elementos (ítems) de forma unidimensional, ya sea en fila o columna, permitiendo un control preciso sobre la alineación y distribución del espacio. 
+
+-- Cuando aplicamos **display: flex**, y dejamos el valor por default en **flex-direction:row** alineamos horizontalmente con **justify-content** siempre y cuando no tengamos un **flex-direction:column**  y alineamos verticalmente con **align-itens:center;**
+-- Pero cuando tenemos un **flex-direction:column** alineamos horizontalmente con **align-items:center**, y verticalmente con **justify-content:center**.
+
+En la clase agrega los siguientes propiedades:
+```css
+.hero{
+	----
+
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+}
+```
+### PASO B: Estilo al párrafo y h2
+Colocamos los textos en color blanco, en este caso el h2 y el párrafo. Escribimos:
+```css
+	.contenido-hero h2,
+    .contenido-hero p{
+		Color:var(--blanco);
+	}
+```
+Vamos a asignar  a la fuente un tamaño para cada heading de nuestro sitio, para esto lo haremos con las etiquetas h1, h2 y h3.
+```css
+h1{
+	font-size:3.8rem
+}
+h2{
+	font-size:2.8rem;
+}
+h3{
+	font-size: 1.8rem;
+}
+```
+Para todos los heading vamos a darle un ´text-align:center´, lo haremos escribiendo:
+```css
+h1,h2,h3{
+    text-align: center;
+}
+```
+Con esto ya podemos omitir la siguiente clase: Borra ese bloque de css, ya que no sera necesario.
+```css
+.titulo{
+    text-align: center;
+    font-size: 3.8rem;
+}
+```
+De esa manera iremos como creando un sistema para organizar nuestros títulos, especificando su formato.
+
+## Centrar el icono de ubicación, y el texto.
+
+### Creación de un `<div>`
+Primero crearemos un `<div>` y agregando una clase llamada **ubicación**, esto es para ubicar dentro en él el svg del icono de ubicación y el párrafo `<p>Guadalajara, Jalisco</p>`. Tu código deberá verse de la siguiente manera:
+```html
+<div class=”ubicacion”>
+	 <svg xmlns ---------
+    	   -----------
+     	   ----------
+	</svg>
+	<p>Guadalajara, Jalisco</p>
+</div>
+```
+Con esto ya podremos asignarle estilos a la clase, y ubicar el icono y el párrafo de manera centrada.
+
+### Aplicar estilos a la clase .ubicacion
+En el archivo css, escribimos:
+```css
+.ubicación{
+	Display: flex; Este nos permitirá organizar el contenido de nuestro div, en este caso organizara los elementos como una fila, uno a lado del otro.
+	Ahora ubicaremos el texto en la parte de abajo, ya que aparece arriba a lado del icono. Para esto escribe:
+	Align-item: flex-end;  esto permitirá alinearlo verticalmente, y colocarlo en la parte de abajo.
+}
+```
+## Aplicar estilo a los botones
+-- Primero crearemos una clase llamada **boton** en el enlace que crea al botón Contactar:
+```html
+	<a class="boton" href="#">Contactar</a>
+```
+
+-- Nos ubicamos debajo de la clase **.contenedor** y escrimos el css para la clase .boton
+```css
+.boton{
+	backgroun-color: var(--secundario);   /*Para el color de fondo del botón*/
+	color: var(--blanco); /*para el color de texto*/
+	padding: 1rem 3rem;
+	margin-top:1rem;
+	font-size:2rem;
+	text-decoration:none;
+	text-transform: uppercase; /*para transformar el texto a mayúsculas, así si deseamos colocarlo en minúsculas lo hacer en todos los botones con esta propiedad.*/
+	font-weight: bold;
+
+	/*Para colocar las esquinas redondeadas, escribimos:*/
+	border-radius: .5rem;
+	width: 90%  /*escribimos esta propiedad para que el botón abarque el 90% de la pantalla*/
+	text-align: center; /*centramos el texto*/
+}
+```
+Ahora escribimos un media queries para resetear el botón en cuanto a su proporción cuando la pantalla sea de 780px, escribiendo:
+@media (min-width:768px){
+.boton{
+        Width: auto;
+     }
+}
+NOTA; VISUALIZALO EN LA APLICACIION  RESPONSIVE, YOBSERVA COMO SE ADAPTA A LOS DISTINTOS TAMAÑOS DE PANTALLAS.
 
 
 
