@@ -4,7 +4,7 @@
 El término "responsive" en diseño web se refiere a la capacidad de un sitio web para adaptarse automáticamente a cualquier tamaño de pantalla y dispositivo (ordenador, tablet, móvil) y ofrecer una experiencia de usuario óptima.
 Las media queries son una funcionalidad de CSS que permite aplicar estilos CSS condicionalmente según las características del dispositivo, como el ancho de la pantalla, la resolución o el tipo de medio 
 
-### PASO A. Añadiendo los media Queries
+### Paso A. Añadiendo los media Queries
 EN EL ARCHIVO CSS escribe:
 ```css
 /*Agregamos el media query Para una tableta*/
@@ -16,7 +16,7 @@ EN EL ARCHIVO CSS escribe:
 ```
 Esto permitira adaptar la barra de navegación en dispositivos con un tamaño de 768px.
 
-### PASO B. Modificar la clase contenedor.
+### Paso B. Modificar la clase contenedor.
 Observa que la barra de navegación aun no se adapta a otros dispositivos con pantallas mas pequeñas.
 ![SitioWeb](imagenes/responsive1.png)
 
@@ -34,7 +34,7 @@ Con el cambio anterior puedes notar como la barra de navegación ya se adapta a 
 **Nota:** Para que puedas ver tu sitio web en distintos tipos de dispositivos e ir verificando tu diseño responsivo, puedes utilizar la aplicación **Responsively App**, puedes descargar la aplicación en el siguiente enlace: https://responsively.app/
 Una vez decargado, solo escribe la ubicación de tu proyecto en la barra de direccion de la aplicación, y podrás ir visualizando tu proyecto conforme vayas realizando las modificaciones.
 
-### PASO C. Modificar la clase navegacion
+### Paso C. Modificar la clase navegacion
 EN EL ARCHIVO CSS..
 Modificamos la clase .navegacion-principal y agregamos las siguientes 2 lineas:
 ```css
@@ -46,7 +46,7 @@ Modificamos la clase .navegacion-principal y agregamos las siguientes 2 lineas:
 	..
 	}
 ```
-### PASO D. Mover la propiedad justyfy-content
+### Paso D. Mover la propiedad justyfy-content
 En el archivo CSS..
 Ahora movemos el **justyfy-cotent: space-between** ubicado en **.navegacion-principal** al **@media**, esto es para permitir adaptarse en dispositivos de 768px
 ```css
@@ -60,17 +60,21 @@ Ahora movemos el **justyfy-cotent: space-between** ubicado en **.navegacion-prin
 ## 2. Imagenes con CSS
 Agregaremos una imagen debajo de la barra de navegación, y la pondremos de fondo, agregandole un estilos
 
-### PASO A: Crear la clase hero
-Crearemos una clase en la etiqueta **`<section>`**, llamada **hero**, para poder darle estilos a esta sección. 
-Vaya al codigo HTML, y agregue la clase, la seccion debe verse como en el siguiente codigo:
+### Paso A: Crear la clase hero
+- Crearemos una clase en la etiqueta **`<section>`**, llamada **hero**, para poder darle estilos a esta sección. 
+- Tambien crearemos un contenedor con un **`<div>`**, lo cual nos permitirá organizar mejor los elementos que tenemos, admas crearemos una clase para **DIV**, llamada **contenido-hero**
+Vaya al codigo HTML, y agregue la clase en la sección, agregue un div creando una clase en el. La seccion debe verse como en el siguiente codigo:
 ```html
 	<section class="hero">
+		<div class="contenido-hero">
 	        <h2>Diseño y dessarrollo Web Freelancer</h2>
 	        <svg
+			-----
+		</div>
 ```
-### PASO B. Agregar estilos
+### Paso B. Agregar estilos
 Ahora agregamos estilos a la clase **hero**, colocaremos de fondo la imagen hero.jpg.
-Para esto primero eliminamos la imagen que tenemos agregada, para quedarnos solo con la que estará de fondo.
+Para esto **primero** eliminamos la imagen que tenemos agregada, para quedarnos solo con la que estará de fondo.
 ```html
     </div>
   	  <img src="hero.jpg"> <- Elimine esta linea
@@ -83,6 +87,9 @@ Ahora agregue los estilos
     background-image: url(../hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+	height: 450px;
+    position: relative;
+    margin-bottom: 2rem;
 }
 ```
 - Agregamos `background-image: url(../hero.jpg);` para especificar una imagen de fondo para la **sección** de la clase **hero**.
@@ -111,18 +118,8 @@ Este código permitirá seleccionar todos los elementos html, y aplicar el box-s
 Para darle un estilo de sobra a la imagen de fondo que se muestra en nuestro sitio web, tal y como se muestra en la siguiente imagen, debemos realizar lo siguiente:
 ![SitioWeb](imagenes/imagen_fondo.png)
 
-### PASO A: Agregar un contenedor div
-- Primero agregaremos en contenedor div en nuestra etiqueta `<section class=”hero”>` en nuestro html, esto es para poder manipular mejor la imagen que se coloca de fondo y los elementos de la sección.
 
-```html
-<section class=hero>
-	<div class=”contenido-hero”>
-		… aquí agregamos el contenido de toda la section
-	</div>
-</section>
-```
-
-### PASO B: Agregar estilos
+### Paso A: Agregar estilos a la clase contenido-hero
 - Ahora en el css, agregamos los siguientes estilos:
 ```css
 .contenido-hero{
@@ -131,7 +128,7 @@ Para darle un estilo de sobra a la imagen de fondo que se muestra en nuestro sit
 		height:100%;   /*con un alto del 100%*/
 }
 ```
-### PASO C: Modificar LA CLASE .hero{ --}
+### Paso B: Modificar LA CLASE .hero{ --}
 Agregamos las propiedades:
 - `position:relative;` en la clase .hero{ - -} ya que fungirá como el elemento hijo, para que su posición sea en base a la posición que tenga el elemento o clase .hero.
 - `position: absolute; ` en la clase .contenido-hero ya que fungirá como el elemento padre, y su posición determinará la del elemento de la clase .hero.
@@ -149,16 +146,16 @@ Agregamos las propiedades:
 ```
 ## CSS a los heading
 
-### PASO A: Centrar contenido de la clase hero
+### Paso A: Centrar contenido de la clase contenido-hero
 La clase **hero** representa el contenedor que contiene un **h2** y el **icono** de ubicaciónmy el párrafo, estos elementos aun se encuentran alineados a la izquierda, nuestro propósito será centrarlo, tanto vertical como horizontalmente. Para esto se hará uso del display flex.
 - display: flex es una propiedad CSS que se aplica a un contenedor para organizar sus elementos (ítems) de forma unidimensional, ya sea en fila o columna, permitiendo un control preciso sobre la alineación y distribución del espacio. 
 
 - Cuando aplicamos **display: flex**, y dejamos el valor por default en **flex-direction:row** alineamos horizontalmente con **justify-content** siempre y cuando no tengamos un **flex-direction:column**  y alineamos verticalmente con **align-itens:center;**
 - Pero cuando tenemos un **flex-direction:column** alineamos horizontalmente con **align-items:center**, y verticalmente con **justify-content:center**.
 
-En la clase agrega los siguientes propiedades:
+En la clase **contenido-hero** agrega los siguientes propiedades:
 ```css
-.hero{
+.contenido-hero{
 	----
 
 	display:flex;
@@ -167,7 +164,7 @@ En la clase agrega los siguientes propiedades:
 	justify-content:center;
 }
 ```
-### PASO B: Estilo al párrafo y h2
+### Paso B: Estilo al párrafo y h2
 Colocamos los textos en color blanco, en este caso el h2 y el párrafo. Escribimos:
 ```css
 	.contenido-hero h2,
@@ -260,7 +257,7 @@ Ahora escribimos un media queries para resetear el botón en cuanto a su proporc
      	}
 }
 ```
-NOTA; VISUALIZALO EN LA APLICACIION  RESPONSIVE, YOBSERVA COMO SE ADAPTA A LOS DISTINTOS TAMAÑOS DE PANTALLAS.
+NOTA; VISUALIZALO EN LA APLICACION  RESPONSIVE, YOBSERVA COMO SE ADAPTA A LOS DISTINTOS TAMAÑOS DE PANTALLAS.
 
 
 
