@@ -1,4 +1,4 @@
-# Construcciónn del Sitio Web Freelancer
+# Construcción del Sitio Web Freelancer
 
 ## 1. Introducción a Responsive Web Design
 El término "responsive" en diseño web se refiere a la capacidad de un sitio web para adaptarse automáticamente a cualquier tamaño de pantalla y dispositivo (ordenador, tablet, móvil) y ofrecer una experiencia de usuario óptima.
@@ -218,22 +218,28 @@ Con esto ya podremos asignarle estilos a la clase, y ubicar el icono y el párra
 En el archivo css, escribimos:
 ```css
 .ubicación{
-	Display: flex; Este nos permitirá organizar el contenido de nuestro div, en este caso organizara los elementos como una fila, uno a lado del otro.
+	Display: flex; /*Este nos permitirá organizar el contenido de nuestro div, en este caso organizara los elementos como una fila, uno a lado del otro.*/
 	justify-content:center; 
-	Ahora ubicaremos el texto en la parte de abajo, ya que aparece arriba a lado del icono. Para esto escribe:
-	Align-item: flex-end;  esto permitirá alinearlo verticalmente, y colocarlo en la parte de abajo.
+	/*Ahora ubicaremos el texto en la parte de abajo, ya que aparece arriba a lado del icono. Para esto escribe:*/
+	Align-item: flex-end;  /*esto permitirá alinearlo verticalmente, y colocarlo en la parte de abajo.*/
 }
 ```
-## Aplicar estilo a los botones
+## Aplicar estilos al los boton
+## Paso A: Crear clase boton
 - Primero crearemos una clase llamada **boton** en el enlace que crea al botón Contactar:
 ```html
-	<a class="boton" href="#">Contactar</a>
+    <p>Guadalajara, Jalisco</p>
+             </div>
+            <a class="boton" href="#">Contactar</a> /*Asegurate que tus lineas de codigo se vean asi*/
+        </div>
+    </section>
 ```
 
+### Paso B: Aplicar estilos a la clase boton 
 - Nos ubicamos debajo de la clase **.contenedor** y escrimos el css para la clase .boton
 ```css
 .boton{
-	backgroun-color: var(--secundario);   /*Para el color de fondo del botón*/
+	background-color: var(--secundario);   /*Para el color de fondo del botón*/
 	color: var(--blanco); /*para el color de texto*/
 	padding: 1rem 3rem;
 	margin-top:1rem;
@@ -244,11 +250,15 @@ En el archivo css, escribimos:
 
 	/*Para colocar las esquinas redondeadas, escribimos:*/
 	border-radius: .5rem;
-	width: 90%  /*escribimos esta propiedad para que el botón abarque el 90% de la pantalla*/
+	width: 90%;  /*escribimos esta propiedad para que el botón abarque el 90% de la pantalla*/
 	text-align: center; /*centramos el texto*/
+	 border:none;
 }
 ```
-Ahora escribimos un media queries para resetear el botón en cuanto a su proporción cuando la pantalla sea de 780px, escribiendo:
+Observa que el botón abarca casi toda la pantalla, y se hace mas notorio el tamaño en pantallas grandes. 
+
+### Paso C: media queries para el boton
+Ahora escribimos un media queries para resetear el botón en cuanto a su proporción cuando la pantalla sea de 780px, esto permitirá adaptar el tamaño del boton en otros tamaños de pantallas, escribiendo:
 
 ```css
 @media (min-width:768px){
@@ -257,7 +267,7 @@ Ahora escribimos un media queries para resetear el botón en cuanto a su proporc
      	}
 }
 ```
-NOTA; VISUALIZALO EN LA APLICACION  RESPONSIVE, YOBSERVA COMO SE ADAPTA A LOS DISTINTOS TAMAÑOS DE PANTALLAS.
+NOTA; VISUALIZALO EN LA APLICACION  RESPONSIVE, Y OBSERVA COMO SE ADAPTA A LOS DISTINTOS TAMAÑOS DE PANTALLAS.
 
 
 
