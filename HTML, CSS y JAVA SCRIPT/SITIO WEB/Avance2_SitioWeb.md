@@ -272,6 +272,7 @@ Ahora escribimos un media queries para resetear el botón en cuanto a su proporc
 ```
 NOTA; VISUALIZALO EN LA APLICACION  RESPONSIVE, Y OBSERVA COMO SE ADAPTA A LOS DISTINTOS TAMAÑOS DE PANTALLAS.
 
+![SitioWeb](imagenes/boton-mediaquerie.png)
 
 
 
