@@ -259,6 +259,7 @@ Observa que el botón abarca casi toda la pantalla, y se hace mas notorio el tam
 
 ![SitioWeb](imagenes/boton.png)
 
+El tamaño del botón es muy adecuado para dispositivos pequeños como los celulares, pero para las computadoras y tabletas no se muy bien, para lograr que este elemento se adapte, agregaremos un **media querie**.
 ### Paso C: media queries para el boton
 Ahora escribimos un media queries para resetear el botón en cuanto a su proporción cuando la pantalla sea de 780px, esto permitirá adaptar el tamaño del boton en otros tamaños de pantallas, escribiendo:
 
