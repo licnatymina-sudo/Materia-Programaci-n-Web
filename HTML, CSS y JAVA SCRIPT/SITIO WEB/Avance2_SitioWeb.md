@@ -224,7 +224,7 @@ En el archivo css, escribimos:
 	Align-item: flex-end;  /*esto permitirá alinearlo verticalmente, y colocarlo en la parte de abajo.*/
 }
 ```
-## Aplicar estilos al los boton
+## Aplicar estilos al boton
 ## Paso A: Crear clase boton
 - Primero crearemos una clase llamada **boton** en el enlace que crea al botón Contactar:
 ```html
@@ -256,6 +256,8 @@ En el archivo css, escribimos:
 }
 ```
 Observa que el botón abarca casi toda la pantalla, y se hace mas notorio el tamaño en pantallas grandes. 
+
+![SitioWeb](imagenes/boton.png)
 
 ### Paso C: media queries para el boton
 Ahora escribimos un media queries para resetear el botón en cuanto a su proporción cuando la pantalla sea de 780px, esto permitirá adaptar el tamaño del boton en otros tamaños de pantallas, escribiendo:
