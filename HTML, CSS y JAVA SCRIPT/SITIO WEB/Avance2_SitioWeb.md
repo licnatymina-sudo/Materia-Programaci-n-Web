@@ -96,7 +96,7 @@ Ahora agregue los estilos
 - Debido a que la imagen se repite en pantallas grandes, utilizaremos `background-repeat: no-repeat;`
 - Ahora podrás ver que la imagen en algunos dispositivos no abarca toda la pantalla, utilizamos la propiedad: `background-size: cover;` y la imagen tomara todo el ancho disponible
 
-## Diseño de Caja - Box Model
+##3. Diseño de Caja - Box Model
 “Una de las cosas que menos me gustan del diseño con CSS es la relación entre el ancho y el relleno. Estás ocupado definiendo anchos para que coincidan con la cuadrícula o las proporciones generales de las columnas, y luego empiezas a añadir texto, lo que requiere definir el relleno para esos recuadros. Y, ¡oh sorpresa!, ahora estás restando píxeles al ancho original para que el recuadro no se expanda.” (**Paul Irlandes**)
 
 Para evitar estar ajustando el tamaño del elemento por los padding y border que le podamos agregar, como solución podemos aplicar el siguiente código css proporcionado por **Paul Irlandes**, desarrollador de Google.
@@ -114,7 +114,7 @@ html{
 ```
 Este código permitirá seleccionar todos los elementos html, y aplicar el box-sizing, lo que permitirá que se mantenga el tamaño del elemento aunque se agreguen otras propiedades como el padding o border.
 
-## Agregar una sombra a la imagen
+## 4. Agregar una sombra a la imagen
 Para darle un estilo de sobra a la imagen de fondo que se muestra en nuestro sitio web, tal y como se muestra en la siguiente imagen, debemos realizar lo siguiente:
 ![SitioWeb](imagenes/imagen_fondo.png)
 
@@ -144,7 +144,7 @@ Agregamos las propiedades:
 	height:100% /*con un alto del 100%*/
 }
 ```
-## CSS a los heading
+## 5. CSS a los heading
 
 ### Paso A: Centrar contenido de la clase contenido-hero
 La clase **hero** representa el contenedor que contiene un **h2** y el **icono** de ubicaciónmy el párrafo, estos elementos aun se encuentran alineados a la izquierda, nuestro propósito será centrarlo, tanto vertical como horizontalmente. Para esto se hará uso del display flex.
@@ -199,9 +199,9 @@ Con esto ya podemos omitir la siguiente clase: Borra ese bloque de css, ya que n
 ```
 De esa manera iremos como creando un sistema para organizar nuestros títulos, especificando su formato.
 
-## Centrar el icono de ubicación, y el texto.
+## 6. Centrar el icono de ubicación, y el texto.
 
-### Creación de un `<div>`
+### Paso A: Creación de un `<div>`
 Primero crearemos un `<div>` y agregando una clase llamada **ubicación**, esto es para ubicar dentro en él el svg del icono de ubicación y el párrafo `<p>Guadalajara, Jalisco</p>`. Tu código deberá verse de la siguiente manera:
 ```html
 <div class=”ubicacion”>
@@ -214,7 +214,7 @@ Primero crearemos un `<div>` y agregando una clase llamada **ubicación**, esto 
 ```
 Con esto ya podremos asignarle estilos a la clase, y ubicar el icono y el párrafo de manera centrada.
 
-### Aplicar estilos a la clase .ubicacion
+### Paso B: Aplicar estilos a la clase .ubicacion
 En el archivo css, escribimos:
 ```css
 .ubicación{
@@ -224,7 +224,7 @@ En el archivo css, escribimos:
 	Align-item: flex-end;  /*esto permitirá alinearlo verticalmente, y colocarlo en la parte de abajo.*/
 }
 ```
-## Aplicar estilos al boton
+## 7. Aplicar estilos al boton
 ## Paso A: Crear clase boton
 - Primero crearemos una clase llamada **boton** en el enlace que crea al botón Contactar:
 ```html
