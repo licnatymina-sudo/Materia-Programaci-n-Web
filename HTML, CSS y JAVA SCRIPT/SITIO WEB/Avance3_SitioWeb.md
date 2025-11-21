@@ -129,3 +129,308 @@ Ahora agregamos una separación entre columnas, para que el contenido no este pe
 }
 ```
 ![SitioWeb](imagenes/grid_sitiosResponsive2.png)
+
+## 4.	Finalizando la sección de servicios.
+
+### Crear clase servicio
+Vamos a dar una mejor apariencia a nuestra sección de servicios aplicando css a su contenido. Iniciaremos creando una clase para cada sección de nuestro contenedor servicios. Y crearemos un contenedor para los iconos de cada sección.
+
+La clase para las secciones se llamará **servicio**. Y la clase para cada contenedor de los iconos se llamara **iconos**.
+```html
+<section class=”servicio”>
+	<h3>Diseño Web>/h3>
+		<div class=”iconos”>	
+			---
+		</div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, tenetur id corrupti doloremque excepturi recusandae architecto necessitatibus porro, esse blanditiis doloribus quidem sunt repudiandae pariatur. Delectus temporibus dolore mollitia molestias.</p>
+	</section>
+
+	<section class=”servicio”>
+		<h3>Aplicaciones Web>/h3>
+		<div class=”iconos”>	
+			---
+		</div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, tenetur id corrupti doloremque excepturi recusandae architecto necessitatibus porro, esse blanditiis doloribus quidem sunt repudiandae pariatur. Delectus temporibus dolore mollitia molestias.</p>
+	</section>
+	<section class=”servicio”>
+		<h3>E-commerce>/h3>
+		<div class=”iconos”>	
+			---
+		</div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, tenetur id corrupti doloremque excepturi recusandae architecto necessitatibus porro, esse blanditiis doloribus quidem sunt repudiandae pariatur. Delectus temporibus dolore mollitia molestias.</p>
+	</section>
+```
+### Css para la clases .servicio y sus elementos.
+Escribe los siguientes contenedores en tu archivo css:
+```css
+	.servicio{
+	}
+	
+	.servicio h3{
+	}
+	.servicio p{
+	}
+	
+	.servicio .iconos{
+	}
+```
+Iniciaremos escribiendo estilos para los iconos:
+```css
+.servicio .iconos {
+	height:15rem; 				/*altura de 15rem*/
+	width:15rem; 				/*ancho de 15rem*/
+	background-color: var(--primario);
+	boder-radius: 50%; 			 /*permitirá hacer un circulo exacto al colocar el valor en 50% */
+
+	/*centrar los iconos*/
+	display: flex;        			/*Habilitamos un display de flex, para accede a las propiedades para centrar */
+	justify-content:space-evenly;   /*permitirá centrar los iconos de manera horizontal otorgando un espacio si se muestrab 2 icono en ese espacio*/
+	align-items:center;   			 /*centra los icono verticalmente*/
+}
+```
+![SitioWeb](imagenes/estilo_iconos.png)
+
+Podras notar que el contenido de la sección de servicios aun debe alinearse, vamos a la clase .servicio y agregamos lo siguiente:
+```css
+.servicio{
+	display:flex;
+	flex-direction:column; /*para que el contenido no lo vaya a colocar uno a lado de otro, ya que el valor por default del display: flex es row*/
+	align-items:center;
+}
+```
+
+Lo siguiente será aplicar un interlineado a los párrafos para que puedan ser mas legibles al leer, y también centraremos el párrafo. Escribimos lo siguiente:
+```css
+.servicio p{
+	line-height:2;
+	text-align:center;
+}
+```
+Y finalmente agregaremos estilos a los títulos.
+```css
+.servicio h3{
+	color: var(--secundario);
+	font-weight:normal;
+}
+```
+Observa los resultados
+![SitioWeb](imagenes/estilo_servicio.png)
+
+
+## Formulario de la sección contactos
+
+Primero que nada incluiremos el contenido del formulario dentro del main, para esto corta el cierre del main, y colocalo después del cierre del section del formulario.
+```css
+	</section>
+</main>
+<footer>
+	--
+</footer>
+```
+Notaras que el formulario ya se encuentra dentro de la seccion principal al igual que lose servicios del sitio.
+
+![SitioWeb](imagenes/servicio_enmain.png)
+
+El siguiente paso será agregarle una clase al formulario.
+		`<form class=”formulario”>`
+Ahora podemos iniciar con la aplicación de estilos al formulario.
+```css
+/*CONTACTO*/
+.formulario{
+	
+}
+.formulario fieldset{
+}
+```
+Podras notar que el formulario tiene un borde, el cual se aplica por default, en este caso para nuestro diseño se lo quitaremos:
+```css
+	.formulario fieldset{
+		border:none;
+	
+	}
+```
+Ahora aplicaremos un color de fondo a nuestro formulario
+```css
+.formulario{
+	background-color:var(--gris);
+	width: min(60rem 100%); /*Utilizar el valor mas pequeño*/
+	margin:0 auto; /*centra el formulario horizontalmente*/
+	padding:2rem;  /*agregamos un padding a el contenedor del foulario*/
+	border-radius: 1rem; /*colocamos esquinas redondeadas*/
+}
+```
+La función del parámetro `min`, en `Width: min(60rem 100%);` es tomar para el ancho del formulario el valor mas pequeño de entre `60rem` o el `100%` del formulario, comparando si es mas pequeño los `60rem` o el tamaño del formulario tomando el 100% dependiendo del dispositivo en el que se este mostrando.
+
+![SitioWeb](imagenes/formulario_color.png)
+
+Vamos a darle formato al `legend` de nuestro formulario
+```css 
+.formulario legend{
+	text-align:center;   	/*centramos el contenido del legend*/
+	font-size:1.8rem; 		/*aplicamos tamaño*/
+	text-transform:uppercase; /*Lo convertimos en mayusculas*/
+	font-weight: 700; 		/*lo colocamos en negrita*/
+	margin-bottom:2rem; 	/*le colocamos un margin hacia abajo*/
+	color: var(--primario); /*aplicamos color*/
+}
+```
+
+## 6.	CSS a los inputs.
+
+### Crear contenedor para los campos
+Primero agregaremos un contenedor con un `<div>` creando la clase **contenedor-campo**, para colorcarl todos los campos del formulario.
+```css
+<div class:”contenedor-campos”>
+	<div>
+		<label>Nombre</>
+		<input type=”text” placeholder=”Tu nombre”>
+	</div>
+	---
+	---
+</div> <!-- .contenedor-campos-->
+```
+
+Cierre el contenedor div, antes del div del botón enviar.
+### Crear clase campo
+Ahora a cada div para cada campo, agrega la clase campo.
+```csss
+<div class:”contenedor-campos”>
+	<div class=”campo”>
+		<label>Nombre</>
+		<input type=”text” placeholder=”Tu nombre”>
+	</div>
+	---
+	---
+</div> <!-- .contenedor-campos-->
+```
+
+### Especificar selectores
+ Creamos nuestros selectores, para posteriormente aplicarle estilos.
+```css
+.contenedor-campos{
+}
+.campo{
+}
+
+.campo label{
+}
+```
+### Aplicar estilos a campo
+Aplicamos los siguientes etilos:
+
+```css
+.campo{
+	margin-bottom:1rem;
+}
+
+.campo label{
+	color: var(--blanco);
+	font-weight: bold;
+	margin-bottom: .5rem;
+	display: block;
+}
+```
+
+### Agregar estilos a los <input>
+Ahora agregaremos estilos a los **inputs** del formulario, para esto primero crearemos una clase para todos los inputs, escribiendo lo siguiente:
+En html
+```html
+<div class:”contenedor-campos”>
+		<div class=”campo”>
+                   <label>Nombre</label>
+                    <input class=”input-text” type="text" placeholder="Tu Nombre">
+   		</div>
+                
+		<div class=”campo”>
+                    <label>Telefono</label>
+                    <input class=”input-text” type="tel" placeholder="Tu telefono">
+ 		</div>
+                
+		<div class=”campo”>
+                    <label>Correo</label>
+                    <input class=”input-text” type="email" placeholder="Tu correo">
+  		</div>
+		<div class=”campo”>
+                    <label>Mensaje</label>
+                    <textarea class=”input-text”></textarea>
+		</div>
+                
+		<div class=”campo”>
+                    <input type="submit" value="Enviar">
+		</div>
+</div> <!—contenedor-campos--->
+```
+
+### Aplicar css a la clase input-text
+	
+LO SIGUIENTE es aplicar css a la clase input-text
+```css
+.input-text{
+	width:100%
+	border: none;
+	padding: 1.5rem;
+	border-radius: .5rem;
+}
+```
+
+Ahora agregamos estilos al botón enviar,  para esto reutilizaremos la clase botón, añadiendo esa clase al input con el que se creo el botón enviar.
+```html
+		<div>
+                    <input class=”boton” type="submit" value="Enviar">
+    	</div>
+```
+Si observas el puntero de la mano no aparece cuando lo pasas sobre el botón enviar, eso es por que los inputs lo eliminan cuando se aplican estilos, entonces agregaremos lo siguiente:
+```css
+.boton:hover{
+	cursor:pointer;
+}
+```
+Observa como va quedando tu sitio, y podrás notar que el botón no toma todo el espacio disponible.
+
+![SitioWeb](imagenes/boton_form.png)
+
+###Crear Utilidades para el Sitio
+Ahora en css, crearemos unas clases que nos servirán de utilidades, ya que podrán aplicarse a distintos elementos.
+Nos ubicamos después del contenedor `.titulo span`, y agregamos lo siguiente:
+
+```css
+/**UTILIDADES**/
+.w-sm-100{
+	width:100%;
+}
+.flex{
+	display:flex;
+}
+.alinear-derecha{
+	justify-content:flex-end;
+}
+```
+Con esto cada utilidad nos permitirá hacer lo siguiente:
+- `w-sm-100`: aplicar un ancho del 100% al elemento
+- `.flex `: aplicar un display flex
+- `.alinear-derecha`: como su nombre lo indica alinear el elemento a la derecha
+
+Ahora aplica las utilidades creadas:
+```html
+<div class=”alinear-derecha flex”>
+          <input class=”botón w-sm-100”  type="submit" value="Enviar">
+</div>
+```
+
+
+Dado que el botón abarca todo el ancho del contenedor del formulario cuando la pantalla es grande, vamos a aplicar un `@media queries`, para que se el ancho al 100% se ajuste cuando las pantallas tengan 768px.
+
+IMAGEN
+
+Debajo de la utilidad `w-100`, escriba:
+```css
+@media (min-width:780px){
+	.w-sm-100{
+		Width:auto;
+}
+```
+
+Visualice nuevamente el sitio en los distintos dispositivos, y note como el botón ya se ajusta de manera distinta en cada dispositivo.
+
+IMAGEN 
+
