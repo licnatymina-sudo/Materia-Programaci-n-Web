@@ -3,14 +3,16 @@
 ## 1. Degradados con CSS
 
 ### A. Agregar un degradado con linear-gradient
+
 Se agregará un color de fondo aplicando degradado para nuestro sitio web. Dado que será para toco el sitio, la propiedad será agregada en la etiqueta **body**.
 Para acceder al degradado o gradient en css utilizaremos la propiedad **background-image**, aunque no se trata de una imagen como tal se utiliza esa propiedad. Utilizamos la sintaxis de `linear-gradient (dirección, color1, color2, ...);`
-- dirección: Especifica la dirección del degradado.N EL ARCHIVO CSS escribe:
-- Palabras clave: Usa palabras como to top, to bottom, to left, to right, o combinaciones como to top right. Si no se especifica, el valor predeterminado es to bottom.
-- color1, color2, ...: Al menos dos colores son obligatorios. Puedes usar nombres de color, valores hexadecimales, RGB, etc.
-- color-stop opcional: Puedes añadir un porcentaje o longitud (% o px) para indicar dónde debe comenzar un color o dónde debe completarse una transición de color.
 
-En nuestra página el degradado, la dirección va de abajo hacia arriba, entonces se utilizará la palabra clave to top. 
+- **dirección:** Especifica la dirección del degradado.N EL ARCHIVO CSS escribe:
+- **Palabras clave:** Usa palabras como to top, to bottom, to left, to right, o combinaciones como to top right. Si no se especifica, el valor predeterminado es to bottom.
+- **color1, color2, ...:** Al menos dos colores son obligatorios. Puedes usar nombres de color, valores hexadecimales, RGB, etc.
+- **color-stop opcional:** Puedes añadir un porcentaje o longitud (% o px) para indicar dónde debe comenzar un color o dónde debe completarse una transición de color.
+
+En nuestra página el degradado, la dirección va de abajo hacia arriba, entonces se utilizará la palabra clave `to top`. 
 Como va de abajo hacia arriba, primero se le pasa con que color iniciará el degradado, y añadimos en que porcentaje o longitud comenzará el color. en segundo lugar, se agregará el color con el que terminará el degradado y el porcentaje en el que terminará.
 ```css 
 body
@@ -68,6 +70,8 @@ Vamos a agregar un poco de separación en la imagen de fondo que se encuentra en
 ```
 Esto nos permitirá separar el contenido de la clase .hero con el contenido principal.
 
+![SitioWeb](imagenes/sombra_sitioW.png)
+
 ## 3. Usar CSS grid, para nuestra sección de servicios
 
 Como primer paso vamos a agregar un contenerdor para nuestras 3 secciones creadas para nuestros servicios, escribiendo lo siguiente:
@@ -87,7 +91,7 @@ Como primer paso vamos a agregar un contenerdor para nuestras 3 secciones creada
 Cerramos el `</div>` después del cierre de la ultima sección, y justo antes del cierre del `</main>`.
 
 ### Css Grid
-- CSS Grid es un sistema de maquetación bidimensional para CSS que permite diseñar páginas web dividiéndolas en filas y columnas, facilitando la creación de estructuras complejas de forma más sencilla y coherente.
+- **CSS Grid** es un sistema de maquetación bidimensional para CSS que permite diseñar páginas web dividiéndolas en filas y columnas, facilitando la creación de estructuras complejas de forma más sencilla y coherente.
 - Se activa aplicando la propiedad display: grid a un elemento padre, lo que convierte a sus hijos en elementos de la cuadrícula que pueden ser posicionados y organizados de manera precisa.
 Ahora vamos a nuestro css, y crearemos un grid para nuestra clase **.servicios**
 ```css
@@ -97,12 +101,16 @@ Ahora vamos a nuestro css, y crearemos un grid para nuestra clase **.servicios**
 	/*grid-template-columns: repeat(3, 1fr);  realiza lo mismo que la linea anterior*/
 }
 ```
+![SitioWeb](imagenes/grid_sitioW.png)
 
-- grid-template-columns:33.3% 33.3% 33.3%; esta línea nos permite crear 3 columnas en nuestro grid, cada una con un tamaño del 33.3% del 100% de nuestro contenedor actual. Otra forma más simplificada de crear esas tres columnas es con el código: grid-template-columns: 1fr 1fr 1fr; donde fr significa fracción, Lo que quiere decir que cada columna tendrá una fracción del entero que representa al contenedor, y dado que agregamos 1fr 3 veces, son en total 3 fracciones. Asi que 1fr =33.3%
-- grid-template-columns: repeat(3, 1fr);  Otra manera de crear 3 columnas con el mismo tamaño es usando repeat,(3, 1fr) donde especificamos que se crearan 3 columnas con un tamaño de 1 fracción para cada columna.
+- `grid-template-columns:33.3% 33.3% 33.3%;` esta línea nos permite crear 3 columnas en nuestro grid, cada una con un tamaño del 33.3% del 100% de nuestro contenedor actual. Otra forma más simplificada de crear esas tres columnas es con el código: `grid-template-columns: 1fr 1fr 1fr;` donde fr significa fracción, Lo que quiere decir que cada columna tendrá una fracción del entero que representa al contenedor, y dado que agregamos 1fr 3 veces, son en total 3 fracciones. Asi que `1fr =33.3%`
+- `grid-template-columns: repeat(3, 1fr);`  Otra manera de crear 3 columnas con el mismo tamaño es usando repeat,(3, 1fr) donde especificamos que se crearan 3 columnas con un tamaño de 1 fracción para cada columna.
 
+Visualiza tu sitio web, y notaras que en dispositivos mas pequeños se mantienen las 3 columnas y se ve amontonado.
 
-Visualiza tu sitio web, y notaras que en dispositivos mas pequeños se mantienen las 3 columnas y se ve amontonado. Para corregir esto, agregaremos un @media, para que las 3 3 columnas se aplique solo en dispositivos de 768px. Y edianuestro código quedará así:
+![SitioWeb](imagenes/grid_sitioResponsive.png)
+
+Para corregir esto, agregaremos un @media, para que las 3 3 columnas se aplique solo en dispositivos de 768px. Y edianuestro código quedará así:
 ```css
 @media(min-width: 768px){
 	.servicios{
@@ -120,3 +128,4 @@ Ahora agregamos una separación entre columnas, para que el contenido no este pe
 		column-gap: 1rem;
 }
 ```
+![SitioWeb](imagenes/grid_sitiosResponsive2.png)
