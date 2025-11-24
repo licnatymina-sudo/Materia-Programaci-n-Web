@@ -104,12 +104,12 @@ Para evitar estar ajustando el tamaño del elemento por los padding y border que
 Agrega a la etiqueta html en el archivo css
 ```css
 html{
-	Box-sizing:border-box;
+	box-sizing:border-box;
 }
 /*Y agrega el siguiente código después de la etiquema html en el css.*/
 
 *,*:before, *:after{
-	Box-sizing:inherit;
+	box-sizing:inherit;
 	}
 ```
 Este código permitirá seleccionar todos los elementos html, y aplicar el box-sizing, lo que permitirá que se mantenga el tamaño del elemento aunque se agreguen otras propiedades como el padding o border.
@@ -169,7 +169,7 @@ Colocamos los textos en color blanco, en este caso el h2 y el párrafo. Escribim
 ```css
 	.contenido-hero h2,
     .contenido-hero p{
-		Color:var(--blanco);
+		color:var(--blanco);
 	}
 ```
 Vamos a asignar  a la fuente un tamaño para cada heading de nuestro sitio, para esto lo haremos con las etiquetas h1, h2 y h3.
@@ -217,11 +217,11 @@ Con esto ya podremos asignarle estilos a la clase, y ubicar el icono y el párra
 ### Paso B: Aplicar estilos a la clase .ubicacion
 En el archivo css, escribimos:
 ```css
-.ubicación{
-	Display: flex; /*Este nos permitirá organizar el contenido de nuestro div, en este caso organizara los elementos como una fila, uno a lado del otro.*/
+contenido-hero .ubicación{
+	display: flex; /*Este nos permitirá organizar el contenido de nuestro div, en este caso organizara los elementos como una fila, uno a lado del otro.*/
 	justify-content:center; 
 	/*Ahora ubicaremos el texto en la parte de abajo, ya que aparece arriba a lado del icono. Para esto escribe:*/
-	Align-item: flex-end;  /*esto permitirá alinearlo verticalmente, y colocarlo en la parte de abajo.*/
+	align-item: flex-end;  /*esto permitirá alinearlo verticalmente, y colocarlo en la parte de abajo.*/
 }
 ```
 ## 7. Aplicar estilos al boton
