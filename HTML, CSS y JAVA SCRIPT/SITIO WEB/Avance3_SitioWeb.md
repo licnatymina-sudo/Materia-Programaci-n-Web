@@ -548,5 +548,5 @@ En nuestro css, escribimos los siguiente para darle estilo a esta sección.
 	text-align: center;
 }
 ```
-Ahora verica en la aplicación responsively que nuestro diseño ya se ve mucho mejor.
+Ahora verifica en la aplicación responsively que nuestro diseño ya se ve mucho mejor.
 
