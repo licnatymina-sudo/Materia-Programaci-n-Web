@@ -33,7 +33,7 @@ Observa como se ha agregado el degradado, has tus pruebas con diferentes colores
 
 ### B. Centrar el contenido principal
 Aplicaremos estilos al contenido principal (main), para esto reutilizaremos la clase contenedor, cuyo css ya se ha definido, en tu index.html agrégalo a la sección main, como se describe a continuación
-```css
+```html
 <main class=”contenedor”>
 	<h2>Mis servicios</h2>
 	….
@@ -42,17 +42,23 @@ Aplicaremos estilos al contenido principal (main), para esto reutilizaremos la c
 
 ## 2. Sombras con css
 
-Utiliza el siguiente código para agregar una sombra a nuestro contenedor principal.
+Utiliza el siguiente código para agregar una sombra a nuestro contenedor principal. Escribelo arriba del selector h1.
+
 ```css
+
 .sombra {
     box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
     background-color: var(--blanco); /*se le agrega un fondo blanco*/
     padding: 2rem; /*agregamos un padding*/
     border-radius: 1rem; /*permitirá darnos un border redondeado*/
 }
+
+h1{
+    font-size: 3.8rem;
+}
 ```
 Ya definidos los estilos para la sombra, ahora agrega esta al contenedor principal (main):
-```css
+```html
 <main class=”contenedor sombra”>
 	<h2>Mis servicios</h2>
 	….
@@ -65,7 +71,7 @@ Vamos a agregar un poco de separación en la imagen de fondo que se encuentra en
 
 .hero{
 	--
-	Margin-bottom:2rem;
+	margin-bottom:2rem;
 }
 ```
 Esto nos permitirá separar el contenido de la clase .hero con el contenido principal.
@@ -75,7 +81,7 @@ Esto nos permitirá separar el contenido de la clase .hero con el contenido prin
 ## 3. Usar CSS grid, para nuestra sección de servicios
 
 Como primer paso vamos a agregar un contenerdor para nuestras 3 secciones creadas para nuestros servicios, escribiendo lo siguiente:
-```css
+```html
 <main class="contenedor sombra">
     <h2>Mis Servicios</h2>	
 	<div class=”servicios”>
@@ -220,7 +226,7 @@ Observa los resultados
 ## Formulario de la sección contactos
 
 Primero que nada incluiremos el contenido del formulario dentro del main, para esto corta el cierre del main, y colocalo después del cierre del section del formulario.
-```css
+```html
 	</section>
 </main>
 <footer>
@@ -279,7 +285,7 @@ Vamos a darle formato al `legend` de nuestro formulario
 
 ### Crear contenedor para los campos
 Primero agregaremos un contenedor con un `<div>` creando la clase **contenedor-campo**, para colorcarl todos los campos del formulario.
-```css
+```html
 <div class:”contenedor-campos”>
 	<div>
 		<label>Nombre</>
@@ -293,7 +299,7 @@ Primero agregaremos un contenedor con un `<div>` creando la clase **contenedor-c
 Cierre el contenedor div, antes del div del botón enviar.
 ### Crear clase campo
 Ahora a cada div para cada campo, agrega la clase campo.
-```csss
+```html
 <div class:”contenedor-campos”>
 	<div class=”campo”>
 		<label>Nombre</>
@@ -459,5 +465,84 @@ Debajo de la utilidad `w-100`, escriba:
 
 Visualice nuevamente el sitio en los distintos dispositivos, y note como el botón ya se ajusta de manera distinta en cada dispositivo.
 
+
 ![SitioWeb](imagenes/boton_enviar.png)
+
+
+## 7. Posicionamiento de los inputs
+
+Observa que el diseño que aplicaremos tendrá 2 campos en la primera línea, y en el resto hay un campo por línea. Esto lo lograremos aplicando grid.
+Recordemos que tenemos un contenedor llamado `contenedor-campos`, este lo utilizaremos para la distribución de nuestros campos.
+
+![SitioWeb](imagenes/formulario_grid_fin.png)
+
+Vamos a nuestro ccss y arriba de nuestro selecctor llamado **.campo**, agregamos lo siguiente:
+```css
+@media(min-width:768px)
+{
+.contenedor-campos{
+		display: grid;
+		grid-template-columns: 50% 50%;
+		column-gap: 1rem;
+		grid-template-rows: auto auto 20rem;  }
+```
+
+- @media(min-width:768px) : Agregamos un media query para que el diseño se aplique para dispositivos que tengan una pantalla de 768px.
+- display: grid:  dado que organizaremos nuestros campos utilizando un grid, escribimos esta línea para definir que lo utilizaremos.
+- grid-template-columns: 50% 50%; nos permitirá crear 2 columnas iguales en mi grd.
+- column-gap: 1re:  nos permitirá agregar una separación entre columnas.
+- grid-template-rows: auto auto 20rem;  permitirá definir un tamaño para cada fila.
+
+Ahora nos daremos a la tarea de colocar los campos correo y mensaje uno en cada fila. Utilizaremos  un **pseudo-clase** llamada `:nth-child() `
+
+`nth-child()` es una pseudo-clase de CSS que permite seleccionar elementos hijos basándose en su posición entre sus hermanos.
+
+- Recordemos que tenemos los campos nombre, teléfono, correo y mensaje, todos estos tienen asignada una clase llamada campo, con esto podremos utilizar la pseudo-clase `nth-child`, para referirnos a un campo en específico.
+
+Por ejemplo, si tenemos:
+- `.campo: nth-child(1 );` nos permitirá seleccionar el primer campo es decir el campo nombre;
+- `nth-child(2)`, selecciona el segundo campo, es decir el campo teléfono, y así sucesivamente.
+- 
+ Accedemos a la clase **campo** utilizando la pseudoclase `nth-child` y escribimos dentro de nuestro media query después de `contenedor-campo` :
+```css
+.campo: nth-child(3),
+.campo: nth-child(4) { 
+		grid-column: 1/3;
+}
+```
+Y todo nuestro código para organizar nuestros campos finalmente quedo así;
+```css
+@media(min-width:768px)
+{
+	.contenedor-campos{
+		display: grid;
+		grid-template-columns: 50% 50%;
+		column-gap: 1rem;
+		grid-template-rows: auto auto 20rem;  
+	}
+	.campo: nth-child(3),
+	.campo: nth-child(4) { 
+		grid-column: 1/3;
+	}
+}
+```
+- grid-column: 1/3: esta línea permitirá que los campos que haya especificado en este caso el 3er campo y el 4to, puedan abarcar de la columna 1 a la 3.
+
+
+## Aplicar css al Footer.
+Nuestro siguiente paso será agregar css al footer de nuestro sitio web, para esto primero le agregamos una clase llama footer al elemento html que tiene el mismo nombre.
+```html
+<footer class=”footer”>
+	<p> Todos los derechos reservados. Naty J </p>
+</footer>
+```
+
+En nuestro css, escribimos los siguiente para darle estilo a esta sección.
+```css
+/*Footer*/
+`.footer{
+	text-align: center;
+}
+```
+Ahora verica en la aplicación responsively que nuestro diseño ya se ve mucho mejor.
 
