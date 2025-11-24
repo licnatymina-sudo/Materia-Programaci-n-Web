@@ -335,9 +335,13 @@ Aplicamos los siguientes etilos:
 	margin-bottom: .5rem;
 	display: block;
 }
+
+.campo textarea {
+    height: 20rem;
+}
 ```
 
-### Agregar estilos a los <input>
+### Agregar estilos a los `<input>`
 Ahora agregaremos estilos a los **inputs** del formulario, para esto primero crearemos una clase para todos los inputs, escribiendo lo siguiente:
 En html
 ```html
