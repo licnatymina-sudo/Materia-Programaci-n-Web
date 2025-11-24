@@ -373,11 +373,37 @@ LO SIGUIENTE es aplicar css a la clase input-text
 }
 ```
 
+### Agregar estilos al botón Enviar
+
 Ahora agregamos estilos al botón enviar,  para esto reutilizaremos la clase botón, añadiendo esa clase al input con el que se creo el botón enviar.
 ```html
 		<div>
                     <input class=”boton” type="submit" value="Enviar">
     	</div>
+```
+Ahora es importante que verifique que el selector .boton se encuentre debajo del selector .contenedor, como se muestra a continuación:
+```css
+.contenedor {
+    max-width:120rem;
+    margin: 0 auto;
+}
+
+.boton{
+    background-color: var(--secundario);   /*Para el color de fondo del botón*/
+	color: var(--blanco); /*para el color de texto*/
+	padding: 1rem 3rem;
+	margin-top:3rem;
+	font-size:2rem;
+	text-decoration:none;
+	text-transform: uppercase; /*para transformar el texto a mayúsculas, así si deseamos colocarlo en minúsculas lo hacer en todos los botones con esta propiedad.*/
+	font-weight: bold;
+
+	border-radius: .5rem; /*Para colocar las esquinas redondeadas, escribimos:border-radius*/
+	width: 90%;  /*escribimos esta propiedad para que el botón abarque el 90% de la pantalla*/
+	text-align: center; /*centramos el texto*/
+    border:none;
+     
+}
 ```
 Si observas el puntero de la mano no aparece cuando lo pasas sobre el botón enviar, eso es por que los inputs lo eliminan cuando se aplican estilos, entonces agregaremos lo siguiente:
 ```css
@@ -388,6 +414,7 @@ Si observas el puntero de la mano no aparece cuando lo pasas sobre el botón env
 Observa como va quedando tu sitio, y podrás notar que el botón no toma todo el espacio disponible.
 
 ![SitioWeb](imagenes/boton_form.png)
+
 
 ###Crear Utilidades para el Sitio
 Ahora en css, crearemos unas clases que nos servirán de utilidades, ya que podrán aplicarse a distintos elementos.
@@ -432,5 +459,5 @@ Debajo de la utilidad `w-100`, escriba:
 
 Visualice nuevamente el sitio en los distintos dispositivos, y note como el botón ya se ajusta de manera distinta en cada dispositivo.
 
-IMAGEN 
+![SitioWeb](imagenes/boton_enviar.png)
 
