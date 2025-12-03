@@ -37,9 +37,13 @@ Procedimiento:
   Realiza el siguiente ejercicio, los resultados podrás visualizarlo en la consola de ejecución de la página web. Para visualizarlo realiza lo siguiente:
   - 1. Ejecuta tu pagina web en el navegador (por ejemplo: Microsoft Edge)
     2. Da clic derecho sobre la página y elige la opción **Inspeccionar**
-    3. En la ventana de insoección abrierta, da clic en **Console**
+         ![IntrJavaS](inspeccion.png)
+    4. En la ventana de inspección abierta, da clic en **Console**
+         ![IntrJavaS](consola.png)
+       
   Nota: Visualizarás los resultados de la ejecución de programas en JavaScript en la Consola. (Esto para el momento para fines didácticos) 
-  
+
+
 ```javascript 
 //Variables en Java Script
 
