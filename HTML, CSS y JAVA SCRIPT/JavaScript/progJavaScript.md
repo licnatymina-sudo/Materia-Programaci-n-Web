@@ -527,3 +527,28 @@ const libro=new Libro('JavaScript la Revolución',450, '1245ERD4985');
 //MOSTRAMOS EN CONSOLA el objeto creado, aplicando el metodo formatearProducto
 console.log(libro.formatearProducto());
 ```
+## try catch en JavaScript
+
+try...catch en JavaScript es una construcción que te permite manejar errores (excepciones) que pueden ocurrir durante la ejecución de un código. El bloque try contiene el código que podría fallar, y el bloque catch contiene el código que se ejecuta si ocurre un error dentro del bloque try. Esto evita que el programa se bloquee por completo y te permite manejar el error de manera controlada. 
+### Ejercicio 24.js:
+Procedimiento:
+- Crea un archivo llamado 24.js
+- Enlaza tu archivo .js externo al html
+```javascript
+
+const numero1=20;
+const numero3=30;
+
+console.log(numero1);
+
+try {
+    // Código que podría generar un error
+  // Por ejemplo, intentar acceder a una variable no definida
+    console.log(numero2);
+    
+} catch (error) {
+    // Código que se ejecuta si ocurre un error en el bloque try
+    console.log(error);
+}
+console.log(numero3);
+```
