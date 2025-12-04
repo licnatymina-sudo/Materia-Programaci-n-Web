@@ -552,3 +552,65 @@ try {
 }
 console.log(numero3);
 ```
+### Promise en JavaScript
+Una promesa en JavaScript es un objeto que representa la eventual finalización (o fracaso) de una operación asíncrona. Permite manejar el resultado de una operación que puede tardar, en lugar de bloquear la ejecución del código. Una promesa puede estar en tres estados: pendiente (inicial), resuelta (cumplida con éxito) o rechazada (fallida). 
+
+### Estados de una promesa
+Una promesa puede estar en uno de tres estados posibles: 
+- Pendiente (pending): El estado inicial. La operación asíncrona todavía no ha terminado. 
+- Resuelta (fulfilled): La operación se completó con éxito. La promesa contiene un valor resultante. 
+- Rechazada (rejected): La operación falló. La promesa contiene la razón del error. 
+
+### Métodos comunes para manejar promesas
+Puedes adjuntar manejadores a una promesa utilizando los métodos .then(), .catch(), y .finally(): 
+- .then(): Se utiliza para manejar el resultado exitoso de la promesa. Ejecuta una función callback cuando la promesa se resuelve. 
+- .catch(): Se usa para manejar errores que ocurran durante la ejecución de la promesa. Ejecuta una función callback cuando la promesa es rechazada. 
+- .finally(): Ejecuta una función sin importar si la promesa se resolvió o se rechazó. Es útil para tareas de limpieza. 
+- Promise.all(iterable): Maneja un grupo de promesas. Se resuelve solo cuando todas las promesas del grupo se resuelven, o se rechaza si alguna de ellas falla. 
+- Promise.race(iterable): Espera a que la primera promesa del grupo se resuelva o se rechace.
+
+```javascript
+//promise en JavaScript
+// Crear una nueva promesa llamada usuarioAutenticado
+
+const usuarioAutenticado = new Promise((resolve, reject) => {
+  const auth=true;
+
+   // Simular una autenticacion de usuario
+   if (auth) {
+      resolve('Usuario Autenticado'); // Cumplida - el promise se cumple
+    } else {
+      reject('No se pudo iniciar sesión.'); // Rechazada - el promise no se cumplio
+    }
+  });
+
+// Usar la promesa
+//En los promises exiten 3 valores:
+//pending (pendiente): no se ha completado.
+//fulfilled (cumplida/resuelta): La operación se completó exitosamente y la promesa tiene un valor resultante.
+//rejected (rechazada): La operación falló y la promesa tiene una razón (error) que indica por qué falló.
+
+usuarioAutenticado
+  .then((mensaje) => {    //el parametro mensaje recibe lo que contiene el resolve, en este caso el mensaje  'usuario autenticado'
+    console.log('Éxito:', mensaje); // Manejar el éxito
+  })
+  .catch((error) => {   //el cath recibe lo que contiene el reject, es decir el error que pueda generar la promesa
+    console.error('Fracaso:', error); // Manejar el error
+  });
+```
+## Notification API
+La API de Notificaciones de JavaScript es una interfaz de programación web que permite a las aplicaciones web enviar y mostrar mensajes informativos (notificaciones del sistema) al usuario final, incluso si la aplicación está inactiva, en segundo plano o el navegador no está en foco. Estas notificaciones aparecen a nivel del sistema operativo, similar a las de las aplicaciones nativas. 
+
+### Propósito y Uso
+El objetivo principal de esta API es mantener a los usuarios informados sobre eventos importantes en tiempo real, como: 
+- Nuevos mensajes de chat o correos electrónicos.
+- Alertas de noticias de última hora.
+- Recordatorios o actualizaciones de calendario. 
+- Al mostrarse fuera del área visible de la página web, no interrumpen la experiencia del usuario dentro de la aplicación. 
+
+### Requisitos Clave
+Para utilizar la API de Notificaciones, se deben cumplir dos condiciones principales:
+- Permiso del Usuario: La aplicación debe solicitar y obtener explícitamente el permiso del usuario para mostrar notificaciones. Esto se hace mediante el método estático Notification.requestPermission(). El usuario puede elegir permitir o bloquear las notificaciones para un sitio web específico.
+- Contexto Seguro (HTTPS): La funcionalidad solo está disponible en contextos seguros (sitios web que usan HTTPS).
+
+
