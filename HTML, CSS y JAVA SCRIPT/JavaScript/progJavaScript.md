@@ -153,10 +153,9 @@ Procedimiento:
 - Enlaza tu archivo .js externo al html
 - Crea el siguiente ejercicio paso a paso, y verifica su resultado en la consola.
 
-Recuerda que:
--- ARROWS FUNCTION = Funciones Flechas
--- Es otra forma de declarar las funciones
--- Las declaraciones son mas cortas
+Recuerda que Funciones Flechas:
+- Es otra forma de declarar las funciones
+- Las declaraciones son mas cortas
 
 Crea la siguiente función
 ```javascript
@@ -404,4 +403,127 @@ console.log(producto2);
 console.log(producto3);
 console.log(producto4);
 ```
-  
+## Prototypes en JavaScript
+En JavaScript, un prototipo es un mecanismo de herencia que permite a los objetos compartir propiedades y métodos. Es la base de la herencia prototipal, donde cada objeto tiene un enlace a otro objeto (su prototipo) del que hereda características
+
+Prototypes : Nos permite crear funciones que solo se utilizan en un objeto en especifico
+
+### Ejercicio 21.js:
+Procedimiento:
+- Crea un archivo llamado 21.js
+- Enlaza tu archivo .js externo al html
+```javascript
+//Creamos un Object Constructor
+function Cliente(nombre,apellido){
+    this.nombre=nombre;
+    this.apellido=apellido;
+}
+
+//creamos un prototype, esta funcion la podran utilizar todos los objetos creados de cliente
+//Esta funcion prototipo permitirá enviar un mensaje con los valores del cliente en un formato
+//definido por nosotros.
+Cliente.prototype.formatearCliente=function(){
+    return `El Cliente ${this.nombre} ${this.apellido}`;
+}
+//Instanciamos objetos
+const cliente=new Cliente('Naty', 'Juarez');
+const cliente2=new Cliente('Juan', 'Perez');
+
+//2do ejemplo: Creamos un object constructor llamado Producto
+function Producto(nombre, precio){
+    this.nombre=nombre;
+    this.precio=precio;
+}
+
+Producto.prototype.formatearProducto=function(){
+    return `El Producto ${this.nombre} tiene un precio de: ${this.precio}`;
+}
+
+const producto=new Producto('Mouse inalambrico','350');
+const producto2=new Producto('Teclado', '600');
+
+//aplicacmos el prototipo a los objetos.
+console.log(cliente.formatearCliente());
+console.log(cliente2.formatearCliente());
+
+console.log(producto.formatearProducto());
+console.log(producto2.formatearProducto());
+```
+
+## Clases en JavaScript
+
+Las clases en JavaScript son plantillas para crear objetos, que encapsulan datos (atributos) y funcionalidades (métodos). Se definen con la palabra clave class, un nombre, y un bloque de código entre llaves. Dentro de la clase, se utiliza un constructor para inicializar las propiedades de cada objeto, y se pueden añadir métodos para definir su comportamiento. 
+
+### Ejercicio 22.js:
+Procedimiento:
+- Crea un archivo llamado 22.js
+- Enlaza tu archivo .js externo al html
+```javascript
+//Clases
+//Recomendacion el nombre de la clase que inicie en mayuscula
+
+class Producto{
+    constructor(nombre,precio){
+        this.nombre=nombre;
+        this.precio=precio;
+    }
+    //Agregamos metodos a la clase
+    formatearProducto(){
+        return `El Producto ${this.nombre} tiene un precio de: ${this.precio}`;
+    }
+    obtenerPrecio(){
+        return `El Precio del producto es: ${this.precio}`;
+    }
+}
+
+const producto1=new Producto('Mouse inalambrico','350');
+const producto2=new Producto('Teclado', '600');
+
+console.log(producto1.formatearProducto());
+console.log(producto2.obtenerPrecio());
+```
+## Herencia en JavaScript
+
+La herencia en JavaScript es el proceso de crear objetos que heredan propiedades y métodos de otros objetos a través de una cadena de prototipos. Esto permite reutilizar código y crear jerarquías de objetos. Con la sintaxis de class introducida en ECMAScript 6, la herencia se puede implementar con las palabras clave class y extends para crear subclases que heredan de superclases, utilizando super() para llamar al constructor de la clase padre. 
+
+### Ejercicio 23.js:
+Procedimiento:
+- Crea un archivo llamado 23.js
+- Enlaza tu archivo .js externo al html
+```javascript
+//clase Producto
+class Producto{
+    constructor(nombre,precio){
+        this.nombre=nombre;
+        this.precio=precio;
+    }
+    //se agrega un metodo
+    formatearProducto(){
+        return `El Producto ${this.nombre} tiene un precio de: ${this.precio}`;
+    }
+    obtenerPrecio(){
+        return `El Precio del producto es: ${this.precio}`;
+    }
+}
+//Instanciamos 2 objetos
+const producto1=new Producto('Mouse inalambrico','350');
+const producto2=new Producto('Teclado', '600');
+
+//Herencia
+class Libro extends Producto{
+    constructor(nombre,precio,isbn){
+        super(nombre,precio);       //llamar al constructor de la clase padre. y se heredan el atributo nombre y precio
+        this.isbn=isbn;
+    }
+    //Redefinimos el metodo formatearProducto
+    formatearProducto(){
+        return `${super.formatearProducto()} y su ISBN es ${this.isbn}`;
+    }
+}
+
+//Instanciamos un objeto con la subclase libro
+const libro=new Libro('JavaScript la Revolución',450, '1245ERD4985');
+
+//MOSTRAMOS EN CONSOLA el objeto creado, aplicando el metodo formatearProducto
+console.log(libro.formatearProducto());
+```
