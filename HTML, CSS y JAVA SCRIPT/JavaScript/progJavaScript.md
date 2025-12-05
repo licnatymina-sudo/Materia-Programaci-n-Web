@@ -552,7 +552,7 @@ try {
 }
 console.log(numero3);
 ```
-### Promise en JavaScript
+## Promise en JavaScript
 Una promesa en JavaScript es un objeto que representa la eventual finalización (o fracaso) de una operación asíncrona. Permite manejar el resultado de una operación que puede tardar, en lugar de bloquear la ejecución del código. Una promesa puede estar en tres estados: pendiente (inicial), resuelta (cumplida con éxito) o rechazada (fallida). 
 
 ### Estados de una promesa
@@ -569,6 +569,10 @@ Puedes adjuntar manejadores a una promesa utilizando los métodos .then(), .catc
 - Promise.all(iterable): Maneja un grupo de promesas. Se resuelve solo cuando todas las promesas del grupo se resuelven, o se rechaza si alguna de ellas falla. 
 - Promise.race(iterable): Espera a que la primera promesa del grupo se resuelva o se rechace.
 
+### Ejercicio 25.js:
+Procedimiento:
+- Crea un archivo llamado 25.js
+- Enlaza tu archivo .js externo al html
 ```javascript
 //promise en JavaScript
 // Crear una nueva promesa llamada usuarioAutenticado
